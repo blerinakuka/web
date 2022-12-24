@@ -47,10 +47,8 @@
         background: none;
         font-weight: bold;
         font-size: 15px;
-        transition: .3s;
     }
     button:hover{
-        transform: scale(1.2);
         cursor: pointer;
         border: 2px solid rgb(205, 172, 150);
         color: #201e1e;
@@ -96,7 +94,7 @@
     .foto1 button:hover{
         transform: scale(1.1);
         cursor: pointer;
-        background-color: #ffffff;
+        background-color: #e3e3e3;
         color:  #000000;
         border-color: #000000;
     }
@@ -130,22 +128,20 @@
         text-align: center;
         color: #000000;
         font-size:25px;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     /*produktet*/
     .produktet{
         width: 100%;
-        height: 430px;
+        height: 400px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        border-top: 1px solid rgb(202, 196, 196);
     }
     .produktet img{
         width: 215px;
         height: 220px;
-        background-color: rgb(249, 249, 249);
     }
     .produktet a{
         font-size: small;
@@ -175,32 +171,80 @@
         color: rgb(0, 0, 0);
         font-weight: bold;
         font-size: 12px;
-        transition: .3s;
     }
     .produktet button:hover{
-        transform: scale(1.1);
         cursor: pointer;
         color: black;
-        border: 1px solid black;
+        border: 2px solid black;
     }
     /*image2*/
-    .fotot {
-        display: flex;
-        justify-content:space-around;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
+    .image{
+        position: relative;
         width: 100%;
-        height: 610px;
-        
-        
-        
+        height: 120px;
     }
-    .fotot img {
-        width: 550px;
-        height: 550px;
+    .image__img{
+        display: block;
+        width:  100%;
+        height: 120px;
+        opacity: 80%;
     }
+    .description{
+        color: #000000;
+    }
+    .image__overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+    .image__overlay--blur{
+        backdrop-filter: blur(5px);
+    }
+    .image__overlay > *{
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+    .image__overlay:hover{
+        opacity: 1;
+    }
+    .image__overlay:hover > *{
+        transform: translateY(0);
+    }
+    
+    .image__title{
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .image__description {
+        font-size: 1.25em;
+        margin-top: 0.25em;
+    }
+    .image button {
+        border: none;
+        padding: 2px 10px;
+        border-radius: 0;
+        color: #ffffff;
+        background: none;
+        font-weight: bold;
+        font-size: 15px;
+        }
+    .image button:hover{
+        cursor: pointer;
+        border: 2px solid rgb(255, 255, 255);
+        color: #ffffff;
+        }
+    
 
 
 
@@ -208,7 +252,46 @@
 
 
 
-
+    /*contactus
+    <section>
+<div class="contact">
+  <h1 class="contactus">Contact Us</h1>
+  <button type="button">Contact</button>
+  <h1 class="hotline">Hotline</h1>
+  <h3 class="nr">+49 7221 68801 <br> Monday and Thursday: 9am – 1pm</h3>
+</div>
+</section>*/
+.contact {
+    display: flex;
+    width: 100%;
+    height: 220px;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact1 h1{
+    font-size: 28px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.hotline h1{
+    font-size: 28px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.contact button {
+    padding: 8px 28px;
+    border-radius: 0;
+    color: #000000;
+    background-color: #fafafa;
+    font-weight: bold;
+    font-size: 17px;
+    border: 2px solid rgb(0, 0, 0);
+    }
+.contact button:hover{
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0);
+    color: #000000;
+    }
 
 
 
@@ -278,5 +361,20 @@
         color: #000000;
         padding-left: 8px;
     }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color:black;
+        transition: all 0.5s ease;
+      }
+      .footer-col .social-links a:hover{
+        color:  rgb(214, 131, 75);
+      }
 
 
