@@ -181,13 +181,14 @@
     .image{
         position: relative;
         width: 100%;
-        height: 120px;
+        height: 150px;
     }
     .image__img{
         display: block;
         width:  100%;
-        height: 120px;
+        height: 150px;
         opacity: 80%;
+        position: relative;
     }
     .description{
         color: #000000;
@@ -238,59 +239,51 @@
         background: none;
         font-weight: bold;
         font-size: 15px;
-        }
+    }
     .image button:hover{
         cursor: pointer;
         border: 2px solid rgb(255, 255, 255);
         color: #ffffff;
-        }
+    }
     
 
 
 
 
 
+/*contact*/
 
-
-    /*contactus
-    <section>
-<div class="contact">
-  <h1 class="contactus">Contact Us</h1>
-  <button type="button">Contact</button>
-  <h1 class="hotline">Hotline</h1>
-  <h3 class="nr">+49 7221 68801 <br> Monday and Thursday: 9am – 1pm</h3>
-</div>
-</section>*/
-.contact {
-    display: flex;
-    width: 100%;
-    height: 220px;
-    background-color: rgb(245, 245, 245);
-    text-align: center;
-    align-items: center;
-    justify-content: space-around;
-}
-.contact1 h1{
-    font-size: 28px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-.hotline h1{
-    font-size: 28px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-.contact button {
-    padding: 8px 28px;
-    border-radius: 0;
-    color: #000000;
-    background-color: #fafafa;
-    font-weight: bold;
-    font-size: 17px;
-    border: 2px solid rgb(0, 0, 0);
+    .contact {
+       display: flex;
+       width: 100%;
+       height: 160px;
+       background-color: rgb(247, 247, 247);
+       text-align: center;
+       align-items: center;
+       justify-content: space-around;
+       border: 1px solid black;
     }
-.contact button:hover{
-    cursor: pointer;
-    border: 2px solid rgb(0, 0, 0);
-    color: #000000;
+    .contact1 h1{
+       font-size: 28px;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    .hotline h1{
+       font-size: 28px;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    .contact button {
+       padding: 8px 28px;
+       border-radius: 0;
+       color: #000000;
+       background-color: #fefefe;
+       font-weight: bold;
+       font-size: 17px;
+       border: 2px solid rgb(0, 0, 0);
+    }
+    .contact button:hover{
+       cursor: pointer;
+       border: 2px solid rgb(0, 0, 0);
+       color: #000000;
     }
 
 
@@ -319,7 +312,7 @@
     .footer{
         position: relative;
         background-color: #ffffff;
-        padding-bottom:30px;
+        padding-bottom:70px;
         padding-top: 70px;
         border-top: 0.1px solid rgb(202, 196, 196);
     }
@@ -372,9 +365,9 @@
         border-radius: 50%;
         color:black;
         transition: all 0.5s ease;
-      }
+    }
       .footer-col .social-links a:hover{
         color:  rgb(214, 131, 75);
-      }
+    }
 
 
