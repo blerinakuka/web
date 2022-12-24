@@ -65,18 +65,19 @@
         width: 500px;
         height: 700px;
     }
-    /*THENJA*/
+    /*teksti*/
     .tekst h1 {
         position: absolute;
         top: 24%;
-        right: 380px;
-        font-size: 30px;
-        font-weight: bolder;
+        right: 390px;
+        font-size: 36px;
+        font-weight: lighter;
         color: rgb(0, 0, 0);
+        font-family: 'Times New Roman', Times, serif;
     }
     .tekst p{
         position: absolute;
-        top: 41%;
+        top: 50%;
         right: 130px;
         font-size: 15px;
         font-weight: lighter;
@@ -104,33 +105,48 @@
         color: #414141;
     }
     /*skincare*/
-    .skincare {
-        width: 100%;
-        height: 600px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-bottom: 300px;
+
+    .skincare{
+        position: relative;
+        width: 40%;
+        height:520px;
+        margin-left: 700px;
+        margin-bottom: 15%;
+        background-color: #201e1e;
+        
     }
     .skincare img{
-        width: 450px;
-        height: 500px;
-        margin-left: 600px;
-        margin-top: 10px;
+        display: block;
+        width:  100%;
+        height: 100%;
+        position: relative;
     }
-    /*THENJA*/
+    /*teksti2*/
     .tekst2 {
         position: absolute;
-        top: 1500px;
-        left: 50px;
+        width: 100%;
+        height: 700px;
+        padding-left: 50px;
+        margin-top: 150px;
+        margin-bottom: 150px;
       }
     .tekst2 h1 {
         right: 380px;
-        font-size: 30px;
-        font-weight: bolder;
+        font-size: 40px;
+        font-weight: lighter;
         color: #000000;
         padding-bottom: 30px;
+        font-family: 'Times New Roman', Times, serif;
     }
+    .tekst2 h2{
+        right: 380px;
+        font-size: 30px;
+        font-weight: lighter;
+        color: #000000;
+        padding-bottom: 30px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
     .tekst2 p{
         text-align: left;
         right: 130px;
@@ -142,7 +158,7 @@
         border: 3px solid black;
         background:none ;
         position: absolute;
-        top: 320px;
+        top: 390px;
         left: 40px;
         padding: 8px 26px;
         border-radius: 0;
@@ -158,6 +174,102 @@
         color:  #000000;
         border-color: #000000;
     }
+    /*teksti3*/
+    .tekst3{
+        width: 60%;
+        height: 500px;
+        background-color: rgb(239, 230, 216);
+        margin-left: 400px;
+        margin-top: 30px;
+       
+    }
+    .tekst3 h1 {
+        padding-left: 300px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        font-weight: lighter;
+    }
+    .tekst3 p {
+        
+        padding-left: 300px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+
+
+
+
+
+   /*image2*/
+   .image{
+    position: relative;
+    width: 70%;
+    height:650px;
+    margin-top: -380px;
+    margin-left: 40px;
+}
+.image__img{
+    display: block;
+    width:  70%;
+    height: 650px;
+    position: relative;
+}
+.description{
+    color: #e3e3e3;
+}
+.image__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.image__overlay--blur{
+    backdrop-filter: blur(5px);
+}
+.image__overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.image__overlay:hover{
+    opacity: 1;
+}
+.image__overlay:hover > *{
+    transform: translateY(0);
+}
+.image__title{
+    font-size: 2em;
+    font-weight: bold;
+}
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+.image button {
+    border: none;
+    padding: 6px 15px;
+    border-radius: 0;
+    color: #ffffff;
+    background: none;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.image button:hover{
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    color: #ffffff;
+}
+
 
   
 
@@ -187,11 +299,18 @@
      }
      .contact1 h1{
         font-size: 28px;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-     }
+        font-family:'Times New Roman', Times, serif;
+        
+       }
      .hotline h1{
         font-size: 28px;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        font-family:'Times New Roman', Times, serif;
+       
+     }
+     .nr{
+      
+         font-family:'Times New Roman', Times, serif;
+         font-weight: lighter;
      }
      .contact button {
         padding: 8px 28px;

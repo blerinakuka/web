@@ -1,26 +1,23 @@
-var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+var i = 0;
+var images = [];
+var time = 3000;
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
+images[0] = 'images/mali.jpg';
+images[1] = 'background2.jpg';
+images[2] = 'background3.jpg';
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+function changeImg(){
+  document.slide.src = images[1];
+
+  if(i < images.length -1){
+     i++;
+  }else{
+    i=0;
+
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
+
+  setTimeout("changeImg()", time);
 }
+  
+window.onload = changeImg;

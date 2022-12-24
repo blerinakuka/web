@@ -177,74 +177,10 @@
         color: black;
         border: 2px solid black;
     }
-    /*image2*/
-    .image{
-        position: relative;
-        width: 100%;
-        height: 150px;
-    }
-    .image__img{
-        display: block;
-        width:  100%;
-        height: 150px;
-        opacity: 80%;
-        position: relative;
-    }
-    .description{
-        color: #000000;
-    }
-    .image__overlay{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.6);
-        color: #ffffff;
-        font-family: 'Times New Roman', Times, serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:center;
-        opacity: 0;
-        transition: opacity 0.25s;
-    }
-    .image__overlay--blur{
-        backdrop-filter: blur(5px);
-    }
-    .image__overlay > *{
-        transform: translateY(20px);
-        transition: transform 0.25s;
-    }
-    .image__overlay:hover{
-        opacity: 1;
-    }
-    .image__overlay:hover > *{
-        transform: translateY(0);
-    }
     
-    .image__title{
-        font-size: 2em;
-        font-weight: bold;
-    }
-    .image__description {
-        font-size: 1.25em;
-        margin-top: 0.25em;
-    }
-    .image button {
-        border: none;
-        padding: 2px 10px;
-        border-radius: 0;
-        color: #ffffff;
-        background: none;
-        font-weight: bold;
-        font-size: 15px;
-    }
-    .image button:hover{
-        cursor: pointer;
-        border: 2px solid rgb(255, 255, 255);
-        color: #ffffff;
-    }
+     
+
+    /*slideshow*/
     
 
 
@@ -265,11 +201,18 @@
     }
     .contact1 h1{
        font-size: 28px;
-       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-    }
+       font-family:'Times New Roman', Times, serif;
+       
+      }
     .hotline h1{
        font-size: 28px;
-       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+       font-family:'Times New Roman', Times, serif;
+      
+    }
+    .nr{
+     
+        font-family:'Times New Roman', Times, serif;
+        font-weight: lighter;
     }
     .contact button {
        padding: 8px 28px;
@@ -285,16 +228,6 @@
        border: 2px solid rgb(0, 0, 0);
        color: #000000;
     }
-
-
-
- 
-
-
-
-
-
-
     /* Footer*/
     .container{
         width: 100%;
