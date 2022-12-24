@@ -3,12 +3,12 @@ var i = 0;
 var images = [];
 var time = 3000;
 
-images[0] = 'images/mali.jpg';
-images[1] = 'background2.jpg';
-images[2] = 'background3.jpg';
+images[0] = 'images/better.webp';
+images[1] = 'images/benefits.jpg';
+images[2] = 'images/oily.jpg';
 
 function changeImg(){
-  document.slide.src = images[1];
+  document.slide.src = images[i];
 
   if(i < images.length -1){
      i++;
