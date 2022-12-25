@@ -39,21 +39,19 @@
         color:rgb(205, 172, 150);
         transition: .3s; 
     }
-    button{
+    nav button{
         border: none;
         padding: 6px 20px;
         border-radius: 0;
-        color: #000000;
-        background: none;
+        color: #ffffff;
+        background: black;
         font-weight: bold;
         font-size: 15px;
-        transition: .3s;
     }
-    button:hover{
-        transform: scale(1.2);
+    nav button:hover{
         cursor: pointer;
-        border: 2px solid rgb(205, 172, 150);
-        color: #201e1e;
+        border: 2px solid rgb(189, 189, 189);
+        color: rgb(189, 189, 189);
     }
     /*fotoja1*/
     .forest {
@@ -178,8 +176,7 @@
     .tekst3{
         width: 60%;
         height: 500px;
-        background: rgb(255,255,255);
-        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(222,200,170,1) 100%);
+        background: rgb(235, 226, 212);
         margin-left: 400px;
         margin-top: 30px;
     }

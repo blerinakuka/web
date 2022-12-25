@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+ <title>Login And Registration Form</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ <link rel="stylesheet" type="text/css" href="css/login.css">
+ <script src="javascript/script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h2 class="logo">CLEAR<span>+</span></h2>
+      <ul>
+          <li><a href ="index.html">Home</a></li>
+          <li><a href ="#">About us</a></li>
+          <li><a href ="shop.html">Products</a></li>
+
+          <button type="button">Login</button>
+
+      </ul>
+    
+  </nav> 
+</header>
+  <div class="container">
+    <div class="card">
+      <div class="inner-box" id="card">
+      <div class="card-font">
+    <h2>LOGIN</h2>
+    <form >
+  <input type="email" class="input-box" placeholder="Your email Id" required>
+  <input type="password" class="input-box" placeholder="Password" required>
+   <button type="submit" class="submit-btn" >Submit</button>   
+  <input type="checkbox"><span class="span1">Remember me</span>
+  </form>
+  <button type="button"class="btn" onclick="openRegister()">I'm New Here</button>
+  <a href="">Forgot Password</a>
+ <!--<a href="">Forgot Password</a>--> 
+      </div>
+      <div class="card-back">
+        <h2>REGISTER</h2>
+        <form >
+      <input type="text" class="input-box" placeholder="Your Name" required>
+      <input type="email" class="input-box" placeholder="Your email Id" required>
+      <input type="password" class="input-box" placeholder="Password" required>
+       <button type="submit" class="submit-btn" >Submit</button>   
+      <input type="checkbox"><span>Remember me</span>
+      </form>
+      <button type="button"class="btn" onclick="openLogin()">I've an account</button>
+      <a href="">Forgot Password</a>
+      
+      </div>
+     
+    
+      </div>
+    </div>
+  </div>
+  <script>
+    var card=document.getElementById("card");
+    function openRegister(){
+      card.style.transform="rotateY(-180deg)";
+    }
+    function openLogin(){
+      card.style.transform="rotateY(0deg)";
+    }
+  </script>
+ <section>
+  <div class="contact">
+    <div class="contact1">
+    <h1>Contact Us</h1><br>
+    <button type="button">Contact</button>
+  </div>
+  <div class="hotline">
+    <h1>Hotline</h1><br>
+    <h3 class="nr">+383 1000 1000 <br> Monday and Thursday: 9am – 1pm</h3>
+  </div>
+  </div>
+  </section>
+<footer class="footer">
+  <div class="container1">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="shop.html">Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Highlights</h4>
+        <ul>
+          <li><a href="#">ANTI-REDNESS <br> Calming Serum</a></li>
+          <li><a href="#">Hyaluronic Acid <br>Gel Concentrate</a></li>
+          <li><a href="#">ANTI-REDNESS <br> Calming Cream</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>               
+  </div>
+</footer>
+</body>
+</html>

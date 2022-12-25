@@ -68,7 +68,7 @@
       .dropdown {
         width: 200px;
         height: 59px;
-        margin-left: 88px;
+        margin-left: 22px;
         position: relative;
         display: inline-block;
         background-color:  rgb(96, 54, 54);
@@ -109,13 +109,17 @@
     }
 
      /*produktet*/
+     .shopi{
+        margin-top: 80px;
+     }
      .produktet{
         width: 100%;
-        height: 500px;
+        height:560px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         text-align: center;
+        
     }
     .produktet img{
         width: 260px;
@@ -138,6 +142,11 @@
         transition: .5s;
     }
     .product3:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        transition: .5s;
+    }
+    .product4:hover{
         transform: scale(1.1);
         cursor: pointer;
         transition: .5s;
