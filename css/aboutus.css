@@ -295,45 +295,36 @@
 
 
 /*contact*/
-    .contact {
-        display: flex;
-        width: 100%;
-        height: 160px;
-        background-color: rgb(247, 247, 247);
-        text-align: center;
-        align-items: center;
-        justify-content: space-around;
-        border: 1px solid black;
-     }
-     .contact1 h1{
-        font-size: 28px;
-        font-family:'Times New Roman', Times, serif;
-        
-       }
-     .hotline h1{
-        font-size: 28px;
-        font-family:'Times New Roman', Times, serif;
-       
-     }
-     .nr{
-      
-         font-family:'Times New Roman', Times, serif;
-         font-weight: lighter;
-     }
-     .contact button {
-        padding: 8px 28px;
-        border-radius: 0;
-        color: #000000;
-        background-color: #fefefe;
-        font-weight: bold;
-        font-size: 17px;
-        border: 2px solid rgb(0, 0, 0);
-     }
-     .contact button:hover{
-        cursor: pointer;
-        border: 2px solid rgb(0, 0, 0);
-        color: #000000;
-     }
+.contact {
+    display: flex;
+    width: 100%;
+    height: 160px;
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+ }
+.contact1 h1{
+    font-size: 28px;
+    font-family:'Times New Roman', Times, serif;
+    
+   }
+ .hotline h1{
+    font-size: 28px;
+    font-family:'Times New Roman', Times, serif;
+   
+ }
+ .nr1{
+  
+     font-family:'Times New Roman', Times, serif;
+     font-weight: lighter;
+ }
+ .nr2{
+  
+     font-family:'Times New Roman', Times, serif;
+     font-weight: lighter;
+ }
 
     /* Footer*/
     .container{

@@ -155,19 +155,7 @@ background: #ffffff;
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
-.submit-btn::after{
-  content: '\27a4';
-  color: rgb(255, 255, 255);
-  list-style: 32px;
-  font-size: 17px;
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-  background:rgb(205, 172, 150);
-  position: absolute;
-  right: -1px;
-  top:-1px;
-}
+
 .span1{
   font-size:13px;
   margin-left: 10px;
@@ -202,7 +190,7 @@ background: #ffffff;
   text-align: center;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid black;
 }
 .contact1 h1{
   font-size: 28px;
@@ -214,24 +202,15 @@ background: #ffffff;
   font-family:'Times New Roman', Times, serif;
  
 }
-.nr{
+.nr1{
 
    font-family:'Times New Roman', Times, serif;
    font-weight: lighter;
 }
-.contact button {
-  padding: 8px 28px;
-  border-radius: 0;
-  color: #000000;
-  background-color: #fefefe;
-  font-weight: bold;
-  font-size: 17px;
-  border: 2px solid rgb(0, 0, 0);
-}
-.contact button:hover{
-  cursor: pointer;
-  border: 2px solid rgb(0, 0, 0);
-  color: #000000;
+.nr2{
+
+   font-family:'Times New Roman', Times, serif;
+   font-weight: lighter;
 }
 /*footer*/
 .container1{

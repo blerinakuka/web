@@ -220,25 +220,17 @@
        font-family:'Times New Roman', Times, serif;
       
     }
-    .nr{
+    .nr1{
      
         font-family:'Times New Roman', Times, serif;
         font-weight: lighter;
     }
-    .contact button {
-       padding: 8px 28px;
-       border-radius: 0;
-       color: #000000;
-       background-color: #fefefe;
-       font-weight: bold;
-       font-size: 17px;
-       border: 2px solid rgb(0, 0, 0);
+    .nr2{
+     
+        font-family:'Times New Roman', Times, serif;
+        font-weight: lighter;
     }
-    .contact button:hover{
-       cursor: pointer;
-       border: 2px solid rgb(0, 0, 0);
-       color: #000000;
-    }
+
     /* Footer*/
     .container{
         width: 100%;
