@@ -5,7 +5,7 @@
     <title>Menu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css"  href="css/shop.css">
-    <script src="javascript/script.js"></script>
+    <script src="javascript/shop.js"></script>
 </head>
 <body>
   <header>
@@ -25,13 +25,15 @@
     <button class="dropbtn">Shop Skincare ⮟ </button>
     <div class="dropdown-content">
         <h3>By Product Type</h3>
-      <a href="#">Shop All</a>
-      <a href="#">Cleanser</a>
-      <a href="#">Toner</a>
-      <a href="#">Serums</a>
-      <a href="#">Eye Cream</a>
-      <a href="#">Moisturizers</a>
-      <a href="#">Mask</a>
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('set')"> Set</button>
+        <button class="btn" onclick="filterSelection('serums')"> Serums</button>
+        <button class="btn" onclick="filterSelection('moisturizer')"> Moisturizer</button>
+        <button class="btn" onclick="filterSelection('Eye Cream')"> Eye Cream</button>
+        <button class="btn" onclick="filterSelection('Moisturizers')"> Moisturizers</button>
+        <button class="btn" onclick="filterSelection('Mask')"> Mask</button>
+      </div>
+      
     </div>
   </div>
 
@@ -48,22 +50,22 @@
   </section>
 <div class="shopi">
     <div class="produktet">
-        <div class="product1">
+        <div class="product set">
           <img src="images/seti1.webp">
           <p><a href ="#">5-Step Routine <br> $180</a></p><br>
           <button type="button">SHOP NOW</button>
         </div>
-       <div class="product2">
+       <div class="product set">
            <img src="images/seti2.webp">
            <p><a href ="#">3-Step Routine <br>$120</a></p><br>
            <button type="button">SHOP NOW</button>
        </div>
-       <div class="product3">
+       <div class="product set">
          <img src="images/seti3.webp">
          <p><a href ="#">Serum + moisturizer <br> $80</a></p><br>
          <button type="button">SHOP NOW</button>
          </div>
-         <div class="product4">
+         <div class="product set">
             <img src="images/item1.webp">
             <p><a href ="#">Facial Cleanser <br> $20</a></p><br>
             <button type="button">SHOP NOW</button>
@@ -71,22 +73,22 @@
        </div>
   <div class="produktet">
    
-   <div class="product1">
+   <div class="product serums">
        <img src="images/item2.webp">
        <p><a href ="#">Rose Water Toner <br>$17</a></p><br>
        <button type="button">SHOP NOW</button>
    </div>
-   <div class="product2">
+   <div class="product serums">
      <img src="images/item3.webp">
      <p><a href ="#">Vitamin C Serum<br> $90</a></p><br>
      <button type="button">SHOP NOW</button>
    </div>
-   <div class="product3">
+   <div class="product serums">
     <img src="images/item4.webp">
     <p><a href ="#">Retinol Serum <br> $130</a></p><br>
     <button type="button">SHOP NOW</button>
   </div>
- <div class="product4">
+ <div class="product serums">
      <img src="images/item5.webp">
      <p><a href ="#">Anti-Aging Eye Cream <br>$112</a></p><br>
      <button type="button">SHOP NOW</button>
@@ -94,22 +96,22 @@
 </div>
 <div class="produktet">
     
-   <div class="product1">
+   <div class="product moisturizer">
      <img src="images/item6.webp">
      <p><a href ="#">Hydrating Moisturizer <br> $53</a></p><br>
      <button type="button">SHOP NOW</button>
    </div>
-   <div class="product2">
+   <div class="product moisturizer">
     <img src="images/item7.webp">
     <p><a href ="#">Brigtening Moisturizer <br> $46</a></p><br>
     <button type="button">SHOP NOW</button>
   </div>
- <div class="product3">
+ <div class="product moisturizer">
      <img src="images/item8.webp">
      <p><a href ="#">Retinol Moisturizer <br>$130</a></p><br>
      <button type="button">SHOP NOW</button>
  </div>
- <div class="product4">
+ <div class="product moisturizer">
    <img src="images/item9.webp">
    <p><a href ="#">Detox  Mask <br> $30</a></p><br>
    <button type="button">SHOP NOW</button>
@@ -138,7 +140,7 @@
   </div>
   </section>
 <footer class="footer">
-    <div class="container">
+    <div class="container1">
       <div class="row">
         <div class="footer-col">
           <h4>Company</h4>
