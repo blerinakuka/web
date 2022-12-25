@@ -162,7 +162,7 @@ background: #ffffff;
 }
 .acc:hover{
   transition: .5s;
-  color: burlywood;
+  color: rgb(122, 121, 119);
 }
 .card  .btn{
   margin-top: 70px;
