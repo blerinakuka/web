@@ -1,70 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap%27');
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border-box ;
-    font-family: "Poppins", sans-serif;
-    }
-    /*navbar*/
-    nav{
-        position: sticky;
-        display: flex;
-        background-color: #ffffff;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 3px;
-        padding-left: 7%;
-        padding-right: 7%;
-        padding-bottom: 5px;
-        border-bottom: 0.1px solid rgb(202, 196, 196);
-    }
-    .logo{
-        color:#000000;
-        font-size: 36px;
-    }
-    span{
-        color:rgb(205, 172, 150);
-    }
-    nav ul li{
-        list-style-type: none;
-        display: inline-block;
-        padding:10px 20px;
-    }
-    nav ul li a{
-        color: #000000;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    nav ul li a:hover{
-        color:rgb(205, 172, 150);
-        transition: .3s; 
-    }
-    nav button{
-        border: none;
-        padding: 6px 20px;
-        border-radius: 0;
-        color: #ffffff;
-        background: black;
-        font-weight: bold;
-        font-size: 15px;
-    }
-    nav button:hover{
-        cursor: pointer;
-        border: 2px solid rgb(189, 189, 189);
-        color: rgb(189, 189, 189);
-    }
-    button a{
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: bold;
 
-    }
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box ;
+  font-family: "Poppins", sans-serif;
+  }
+  /*navbar*/
+  nav{
+      position: sticky;
+      display: flex;
+      background-color: #ffffff;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 3px;
+      padding-left: 7%;
+      padding-right: 7%;
+      padding-bottom: 5px;
+      border-bottom: 0.1px solid rgb(202, 196, 196);
+      height: 65px;
+  }
+  .logo{
+      color:#000000;
+      font-size: 36px;
+  }
+  span{
+      color:rgb(205, 172, 150);
+  }
+  nav ul li{
+      list-style-type: none;
+      display: inline-block;
+      padding:10px 20px;
+  }
+  nav ul li a{
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  nav ul li a:hover{
+    color:rgb(205, 172, 150);
+    transition: .3s; 
+}
+nav button{
+    border: none;
+    padding: 6px 20px;
+    border-radius: 0;
+    color: #ffffff;
+    background: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+nav button:hover{
+    cursor: pointer;
+    border: 2px solid rgb(189, 189, 189);
+    color: rgb(189, 189, 189);
+}
+button a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+
+}
 
 .container{
   width:100%;
   height:100vh;
   font-family: sans-serif;
-  background: rgb(75, 75, 75);
+  background: rgb(205, 172, 150);
   color:rgb(255, 255, 255);
   display: flex;
   align-items: center;
@@ -94,6 +96,7 @@ background-image:linear-gradient(rgba(0,0,100,0.8)),url(background.png);
 padding:55px;
 box-sizing: border-box;
 backface-visibility: hidden;
+background: #ffffff;
 }
 .card-back{
   transform:rotateY(180deg) ;
@@ -107,7 +110,7 @@ backface-visibility: hidden;
 .input-box{
   width:100%;
   background: transparent;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(62, 62, 62);
   margin:6px 0;
   height: 32px;
   border-radius: 20px;
@@ -115,18 +118,18 @@ backface-visibility: hidden;
   box-sizing: border-box;
   outline:none;
   text-align: center;
-  color:rgb(255, 255, 255);
+  color:rgb(62, 62, 62);
 
 
 }
 ::placeholder{
-  color: rgb(255, 255, 255);
+  color:rgb(62, 62, 62);
   font-size:12px;
 }
 .btn{
   width:100%;
   background: transparent;
-  border:1px solid rgb(255, 255, 255);
+  border:1px solid rgb(62, 62, 62);
   margin: 35px 0 10px;
   height: 32px;
   font-size: 12px;
@@ -134,14 +137,14 @@ backface-visibility: hidden;
   padding: 0 10px;
   box-sizing: border-box;
   outline: none;
-  color: rgb(255, 255, 255);
+  color:rgb(62, 62, 62);
   cursor: pointer;
 }
 .submit-btn{
   position: relative;
   width:100%;
-  background: transparent;
-  border:1px solid rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+  border:1px solid rgb(62, 62, 62);
   margin: 35px 0 10px;
   height: 32px;
   font-size: 12px;
@@ -154,13 +157,13 @@ backface-visibility: hidden;
 }
 .submit-btn::after{
   content: '\27a4';
-  color: #333;
+  color: rgb(255, 255, 255);
   list-style: 32px;
   font-size: 17px;
   height: 32px;
   width: 32px;
   border-radius: 50%;
-  background:rgb(255, 255, 255);
+  background:rgb(205, 172, 150);
   position: absolute;
   right: -1px;
   top:-1px;
@@ -168,7 +171,7 @@ backface-visibility: hidden;
 .span1{
   font-size:13px;
   margin-left: 10px;
-  color: #6c6c6c;
+  color: #000000;
 
 }
 .card  .btn{
@@ -182,6 +185,11 @@ backface-visibility: hidden;
   font-size: 13px;
   margin-top: 8px;
   
+}
+.card-back span{
+  font-size:13px;
+  margin-left: 10px;
+  color: #000000;
 }
 
 /*contact*/
