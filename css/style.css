@@ -310,72 +310,50 @@
     }
 
 
-/* 
-      
- nav{
-            padding-top: 2px;
-            padding-left: 2%;
-            padding-right: 2%;
-            padding-bottom: 2px;
-        }
-        .logo{
-            font-size: 15px;
-        }
-        nav ul li{
-            padding:6px 16px;
-        }
-        nav ul li a{
-            font-size: 10px;
-        }
-        nav button{
-            padding: 3px 10px;
-            font-size: 8px;
-        }*/
-
       @media only screen and (max-width: 767px) {
         nav{
-            padding-top: 2px;
-            padding-left: 2%;
-            padding-right: 2%;
-            padding-bottom: 2px;
+            padding-top: 1px;
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-bottom: 1px;
         }
         .logo{
             font-size: 15px;
         }
         nav ul li{
-            padding:6px 16px;
+            padding:4px 10px;
         }
         nav ul li a{
-            font-size: 10px;
+            font-size: 9px;
         }
         nav button{
-            padding: 3px 10px;
-            font-size: 8px;
+            padding: 3px 8px;
+            font-size: 6px;
         }
          /*images*/
         .foto1 img {
             width: 100%;
-            height: 260px;
+            height: 235px;
         }
         .top-right h1 {
-            top: 10%;
-            right: 58px;
+            top: 15%;
+            right: 85px;
             font-size: 13px;
         }
         .top-right p{
-            top: 17%;
-            font-size: 8px;
-            margin-left: 235px;
+            top: 20%;
+            font-size: 10px;
+            margin-left: 240px;
             margin-right: 10px;
             text-align:center;
         }
          /*read more*/
         .foto1 button{
             border: 1px solid black;
-            top: 30%;
-            right: 87px;
-            padding: 2px 6px;
-            font-size: 5px;
+            top: 45%;
+            right: 45px;
+            padding: 3px 8px;
+            font-size: 8px;
         }
         /*quotes*/
         .quote1{
@@ -395,55 +373,93 @@
             height: 40px;
         }
          /*produktet*/
-    .produktet{
-        height: 1100px;
-        flex-direction: column;
-        
-    }
-    .produktet img{
-        width: 220px;
-        height: 210px;
-    }
-
-    /*slideshow*/
-    .slideshow {
-            width: 100%;
-            height: 250px;
+        .produktet{
+            height: 1100px;
+            flex-direction: column;
+            
         }
-    .slideshow img{
-            width: 100%;
-            height: 215px;
-    }
-    /*contact*/
-    .contact {
-        width: 100%;
-        height: 130px;
-        text-align: left;
-     }
-     .contact1 h1{
-        font-size: 22px;
-       }
-     .hotline h1{
-        font-size: 22px;
-     }
-     .nr1{
-         font-size: 15px;
-     }
-     .nr2{
-         font-size: 15px;
-     }
- 
-     /* Footer*/
-    .row{
-        padding-left: 25px;
-    }
-   
+        .produktet img{
+            width: 220px;
+            height: 210px;
+        }
 
+        /*slideshow*/
+        .slideshow {
+                width: 100%;
+                height: 190px;
+            }
+        .slideshow img{
+                width: 95%;
+                height: 150px;
+        }
+        /*contact*/
+        .contact {
+            width: 100%;
+            height: 120px;
+            text-align: left;
+        }
+        .contact1 h1{
+            font-size: 22px;
+        }
+        .hotline h1{
+            font-size: 22px;
+        }
+        .nr1{
+            font-size: 15px;
+        }
+        .nr2{
+            font-size: 15px;
+        }
+    
+        /* Footer*/
+        .row{
+            padding-left: 25px;
+        }
       }
 
-
-
-
+      @media only screen and (min-width: 768px) and (max-width: 1023px){
+        
+        /*image*/
+       .foto1 img {
+           width: 100%;
+           height: 400px;
+       }
+       .top-right h1 {
+           top: 25%;
+           right: 130px;
+           font-size: 30px;
+       }
+       .top-right p{
+           top: 35%;
+           right: 20px;
+           margin-left: 280px;
+       }
+       /*read more*/
+       .foto1 button{
+           top: 50%;
+           right: 80px;
+           padding: 8px 26px;
+           font-size: 15px;
+       }
+        /*produktet*/
+        .produktet img{
+            width: 220px;
+            height: 210px;
+        }
+        /*slideshow*/
+        .slideshow {
+            width: 100%;
+            height: 335px;
+        }
+        .slideshow img{
+            width: 85%;
+            height: 270px;
+        }
+        /* Footer*/
+        .row{
+            padding-left: 25px;
+        }
+    }
 
 
 
