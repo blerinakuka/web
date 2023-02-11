@@ -18,7 +18,7 @@
       padding-right: 7%;
       padding-bottom: 5px;
       border-bottom: 0.1px solid rgb(202, 196, 196);
-      height: 65px;
+      
   }
   .logo{
       color:#000000;
@@ -40,255 +40,248 @@
   nav ul li a:hover{
     color:rgb(205, 172, 150);
     transition: .3s; 
-}
-nav button{
-    border: none;
-    padding: 6px 20px;
-    border-radius: 0;
-    color: #ffffff;
-    background: black;
-    font-weight: bold;
-    font-size: 15px;
-}
-nav button:hover{
-    cursor: pointer;
-    border: 2px solid rgb(189, 189, 189);
-    color: rgb(189, 189, 189);
-}
-button a{
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
+  }
+  nav button{
+      border: none;
+      padding: 6px 20px;
+      border-radius: 0;
+      color: #ffffff;
+      background: black;
+      font-weight: bold;
+      font-size: 15px;
+  }
+  nav button:hover{
+      cursor: pointer;
+      border: 2px solid rgb(189, 189, 189);
+      color: rgb(189, 189, 189);
+  }
+  button a{
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
 
-}
+  }
 
-.container{
-  width:100%;
-  height:100vh;
-  font-family: sans-serif;
-  background: rgb(205, 172, 150);
-  color:rgb(0, 0, 0);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .container{
+    width:100%;
+    height:100vh;
+    font-family: sans-serif;
+    background: rgb(205, 172, 150);
+    color:rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-}
-.card{
-  width:350px;
-  height: 430px;
-  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.26);
-  perspective:1000px ;
-}
-.inner-box{
-  position: relative;
-  width:100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-}
-.card-font,.card-back{
-position: absolute;
-width:100%;
-height:100%;
-padding:55px;
-box-sizing: border-box;
-backface-visibility: hidden;
-background: #ffffff;
-}
-.card-back{
-  transform:rotateY(180deg) ;
-}
-.card h2{
-  font-weight: normal;
-  font-size:24px;
-  text-align: center;
-  margin-bottom:20px ;
-}
-.input-box{
-  width:100%;
-  background: transparent;
-  border: 1px solid rgb(62, 62, 62);
-  margin:6px 0;
-  height: 32px;
-  border-radius: 20px;
-  padding: 0 10px;
-  box-sizing: border-box;
-  outline:none;
-  text-align: center;
-  color:rgb(62, 62, 62);
-
-
-}
-::placeholder{
-  color:rgb(62, 62, 62);
-  font-size:12px;
-}
-.btn{
-  width:100%;
-  background: transparent;
-  border:1px solid rgb(62, 62, 62);
-  margin: 35px 0 10px;
-  height: 32px;
-  font-size: 12px;
-  border-radius: 20px;
-  padding: 0 10px;
-  box-sizing: border-box;
-  outline: none;
-  color:rgb(62, 62, 62);
-  cursor: pointer;
-}
-.submit-btn{
-  position: relative;
-  width:100%;
-  background: rgb(0, 0, 0);
-  border:1px solid rgb(62, 62, 62);
-  margin: 35px 0 10px;
-  height: 32px;
-  font-size: 12px;
-  border-radius: 20px;
-  padding: 0 10px;
-  box-sizing: border-box;
-  outline: none;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-}
-
-.acc {
-  display: flex;
-  justify-content: center;
-  margin-left: 10px;
-  color: black;
-  text-decoration: none;
-}
-.acc:hover{
-  transition: .5s;
-  color: rgb(122, 121, 119);
-}
-.card  .btn{
-  margin-top: 70px;
-}
-.login_form #email_error,
-.login_form #name1_error,
-.login_form #password_error{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  width: 230px;
-  font-size: 12px;
-  color: #c62828;
-  background: rgba(255,0, 0, 0.1);
-  text-align: center;
-  padding: 5px 8px;
-  border-radius: 3px;
-  border: 1px solid #ef9a9a;
-  display: none;
-}
-/*contact*/
-
-.contact {
-  display: flex;
-  width: 100%;
-  height: 160px;
-  background-color: rgb(247, 247, 247);
-  text-align: center;
-  align-items: center;
-  justify-content: space-around;
-  border: 1px solid black;
-}
-.contact1 h1{
-  font-size: 28px;
-  font-family:'Times New Roman', Times, serif;
-  
- }
-.hotline h1{
-  font-size: 28px;
-  font-family:'Times New Roman', Times, serif;
- 
-}
-.nr1{
-
-   font-family:'Times New Roman', Times, serif;
-   font-weight: lighter;
-}
-.nr2{
-
-   font-family:'Times New Roman', Times, serif;
-   font-weight: lighter;
-}
-/*footer*/
-.container1{
-  width: 100%;
-  margin:auto;
-}
-.row{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-left: 115px;
-}
-ul{
-  list-style: none;
-}
-.footer{
-  position: relative;
-  background-color: #ffffff;
-  padding-bottom:70px;
-  padding-top: 70px;
-  border-top: 0.1px solid rgb(202, 196, 196);
-}
-.footer-col{
-  width: 25%;
-  padding: 0 15px;
-}
-.footer-col h4{
-  font-size: 18px;
-  color: #000000;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
-}
-.footer-col h4::before{
-  content: '';
+  }
+  .card{
+    width:350px;
+    height: 430px;
+    box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.26);
+  }
+  .inner-box{
+    position: relative;
+    width:100%;
+    height: 100%;
+  }
+  .card-font{
   position: absolute;
-  left: 0;
-  bottom: -10px;
-  background-color: rgb(214, 131, 75);
-  height: 2px;
+  width:100%;
+  height:100%;
+  padding:55px;
   box-sizing: border-box;
-  width: 50px;
-}
-.footer-col ul li:not(:last-child){
-  margin-bottom: 10px;
-}
-.footer-col ul li a{
-  font-size: 16px;
-  color: #000000;
-  text-decoration: none;
-  font-weight: 300;
-  color: #000000;
-  display: block;
-  transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-  color: #000000;
-  padding-left: 8px;
-}
-.footer-col .social-links a{
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255,255,255,0.2);
-  margin:0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color:black;
-  transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-  color:  rgb(214, 131, 75);
-}
+  background: #ffffff;
+  }
+  .card h2{
+    font-weight: normal;
+    font-size:24px;
+    text-align: center;
+    margin-bottom:20px ;
+  }
+  .input-box{
+    width:100%;
+    background: transparent;
+    border: 1px solid rgb(62, 62, 62);
+    margin:6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline:none;
+    text-align: center;
+    color:rgb(62, 62, 62);
+
+
+  }
+  ::placeholder{
+    color:rgb(62, 62, 62);
+    font-size:12px;
+  }
+  .btn{
+    width:100%;
+    background: transparent;
+    border:1px solid rgb(62, 62, 62);
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color:rgb(62, 62, 62);
+    cursor: pointer;
+  }
+  .submit-btn{
+    position: relative;
+    width:100%;
+    background: rgb(0, 0, 0);
+    border:1px solid rgb(62, 62, 62);
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .acc {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+  }
+  .acc:hover{
+    transition: .5s;
+    color: rgb(122, 121, 119);
+  }
+  .card  .btn{
+    margin-top: 70px;
+  }
+  .login_form #email_error,
+  .login_form #name1_error,
+  .login_form #password_error{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 230px;
+    font-size: 12px;
+    color: #c62828;
+    background: rgba(255,0, 0, 0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #ef9a9a;
+    display: none;
+  }
+  /*contact*/
+
+  .contact {
+    display: flex;
+    width: 100%;
+    height: 160px;
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+  }
+  .contact1 h1{
+    font-size: 28px;
+    font-family:'Times New Roman', Times, serif;
+    
+  }
+  .hotline h1{
+    font-size: 28px;
+    font-family:'Times New Roman', Times, serif;
+  
+  }
+  .nr1{
+
+    font-family:'Times New Roman', Times, serif;
+    font-weight: lighter;
+  }
+  .nr2{
+
+    font-family:'Times New Roman', Times, serif;
+    font-weight: lighter;
+  }
+  /*footer*/
+  .container1{
+    width: 100%;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 115px;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    position: relative;
+    background-color: #ffffff;
+    padding-bottom:70px;
+    padding-top: 70px;
+    border-top: 0.1px solid rgb(202, 196, 196);
+  }
+  .footer-col{
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(214, 131, 75);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 300;
+    color: #000000;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #000000;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color:black;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color:  rgb(214, 131, 75);
+  }
 
 @media only screen and (max-width: 767px) {
   nav{
@@ -310,32 +303,30 @@ ul{
       padding: 3px 8px;
       font-size: 6px;
   }
-
-
-
-
-
+  .card{
+    width:250px;
+    height: 400px;
+  }
    /*contact*/
    .contact {
     width: 100%;
     height: 120px;
     text-align: left;
-}
-.contact1 h1{
-    font-size: 22px;
-}
-.hotline h1{
-    font-size: 22px;
-}
-.nr1{
-    font-size: 15px;
-}
-.nr2{
-    font-size: 15px;
-}
-
-/* Footer*/
-.row{
-    padding-left: 25px;
-}
-}
+    }
+    .contact1 h1{
+        font-size: 22px;
+    }
+    .hotline h1{
+        font-size: 22px;
+    }
+    .nr1{
+        font-size: 15px;
+    }
+    .nr2{
+        font-size: 15px;
+    }
+    /* Footer*/
+    .row{
+        padding-left: 25px;
+    }
+  }
