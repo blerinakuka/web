@@ -206,3 +206,96 @@ ul{
 .footer-col .social-links a:hover{
   color:  rgb(214, 131, 75);
 }
+
+@media only screen and (max-width: 767px) {
+  nav{
+      padding-top: 1px;
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-bottom: 1px;
+  }
+  .logo{
+      font-size: 15px;
+  }
+  nav ul li{
+      padding:4px 10px;
+  }
+  nav ul li a{
+      font-size: 9px;
+  }
+  nav button{
+      padding: 3px 8px;
+      font-size: 6px;
+  }
+
+  #overlay{
+    width:100%;
+    height:700px;
+    font-family: sans-serif;
+    background: rgb(205, 172, 150);
+    color:rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+form{
+  width: 300px;
+  height:500px;
+  background: rgb(255, 255, 255);
+  padding :40px;
+  border-radius:3px;
+  box-sizing: border-box;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.26);
+}
+h1{
+  margin:0;
+  text-align: center;
+  font-size: 20px;
+}
+label{
+  display: block;
+  margin:10px 0;
+}
+input,textarea{
+  width: 100%;
+  height: 40px;
+  padding:10px;
+  box-sizing: border-box;
+  outline:none;
+  resize: none;
+  border:none;
+  border-bottom: 1px solid #000000;
+
+}
+input[type="text"]:focus,textarea:focus{
+  border-bottom:1px solid rgb(0, 0, 0);
+}
+textarea::-webkit-scrollbar{
+  width:4px;
+}
+textarea::-webkit-scrollbar-thumb{
+  background-color: rgb(99, 99, 99);
+}
+.center{
+  text-align: center;
+}
+input[type="submit"]{
+  margin-top:30px;
+  width:90%;
+  max-width:180px;
+  background:black;
+  color:rgb(255, 255, 255);
+  font-size: 17px;
+  cursor: pointer;
+  border-radius:3px;
+
+}
+
+    /* Footer*/
+    .row{
+        padding-left: 25px;
+    }
+  }
+ 
