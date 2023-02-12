@@ -196,3 +196,105 @@
      .footer-col .social-links a:hover{
        color:  rgb(214, 131, 75);
    }
+   @media only screen and (max-width: 767px) {
+    nav{
+        padding-top: 1px;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 1px;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    nav ul li{
+        padding:4px 10px;
+    }
+    nav ul li a{
+        font-size: 9px;
+    }
+    nav button{
+        padding: 3px 8px;
+        font-size: 6px;
+    }
+    .tekst h1 {
+        position:static;
+        top: 24%;
+        right: 390px;
+        font-size: 25px;
+        font-weight:lighter;
+        color: rgb(0, 0, 0);
+        font-family: 'Times New Roman', Times, serif;
+    }
+      .tekst h2 {
+        position:static;
+        top: 24%;
+        right: 390px;
+        font-size: 20px;
+        font-weight: lighter;
+        color: rgb(0, 0, 0);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .tekst p{
+        position: absolute;
+        top: 50%;
+        right: 130px;
+        font-size: 2px;
+        font-weight: lighter;
+        color: rgb(101, 101, 101);
+    }
+
+    /*contact*/
+.contact {
+width: 100%;
+height: 120px;
+text-align: left;
+}
+.contact1 h1{
+    font-size: 22px;
+}
+.hotline h1{
+    font-size: 22px;
+}
+.nr1{
+    font-size: 15px;
+}
+.nr2{
+    font-size: 15px;
+}
+/* Footer*/
+.row{
+    padding-left: 15px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+            /*contact*/
+.contact {
+    width: 95%;
+    height: 105px;
+    text-align: left;
+    margin-left:10px;
+    }
+    .contact1 h1{
+        font-size: 22px;
+    }
+    .hotline h1{
+        font-size: 22px;
+    }
+    .nr1{
+        font-size: 15px;
+    }
+    .nr2{
+        font-size: 15px;
+    }
+    
+    /* Footer*/
+    .row{
+        padding-left: 20px;
+    }
+}
+
+
+
+
+
+
