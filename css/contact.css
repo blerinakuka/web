@@ -59,19 +59,26 @@
       font-weight: bold;
   }
 #overlay{
-  width: 100%;
-  height:100%;
-  position:fixed;
-  
-}
+    width:100%;
+    height:700px;
+    font-family: sans-serif;
+    background: rgb(205, 172, 150);
+    color:rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
 form{
-  max-width: 550px;
-  background: orange;
-  margin:17vh auto 0 auto;
+  width: 550px;
+  height:600px;
+  background: rgb(255, 255, 255);
+
   padding :40px;
   border-radius:3px;
   box-sizing: border-box;
-
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.26);
 }
 h1{
   margin:0;
@@ -83,22 +90,23 @@ label{
 }
 input,textarea{
   width: 100%;
+  height: 50px;
   padding:10px;
   box-sizing: border-box;
   outline:none;
   resize: none;
   border:none;
-  border-bottom: 1px solid #d3d3d3;
+  border-bottom: 1px solid #000000;
 
 }
 input[type="text"]:focus,textarea:focus{
-  border-bottom:1px solid orange;
+  border-bottom:1px solid rgb(0, 0, 0);
 }
 textarea::-webkit-scrollbar{
   width:4px;
 }
 textarea::-webkit-scrollbar-thumb{
-  background-color: orange;
+  background-color: rgb(0, 0, 0);
 }
 .center{
   text-align: center;
@@ -107,22 +115,22 @@ input[type="submit"]{
   margin-top:30px;
   width:90%;
   max-width:200px;
-  background:linear-gradient(to right,orange,solid orange);
-  color:white;
-  font: size 17px;
+  background:black;
+  color:rgb(255, 255, 255);
+  font-size: 17px;
   cursor: pointer;
   border-radius:3px;
 
 }
 .error{
-  color:blue;
+  color:rgb(255, 153, 0);
 
 }
 .error-border{
-  border-bottom:1px blue;
+  border-bottom:1px rgb(255, 0, 0);
 }
 #successs{
-  color:blueviolet;
+  color:rgb(0, 0, 0);
 }
 /* Footer*/
 .container{
