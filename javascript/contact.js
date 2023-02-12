@@ -27,8 +27,11 @@ function validateForm(){
  }
  if(!errorFlag){
   success.innerText="Success!";
- }
+  nameInput.value = "";
+  email.value = "";
+  message.value = "";
 }
+ }
 //clear error/success message
  function clearMessages(){
   for(let i=0;i<errorNodes.length;i++){
