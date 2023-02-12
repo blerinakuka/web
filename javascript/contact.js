@@ -26,7 +26,7 @@ function validateForm(){
   errorFlag=true;
  }
  if(!errorFlag){
-  success.innerText="Success!";
+  success.innerText="Sent!";
   nameInput.value = "";
   email.value = "";
   message.value = "";
