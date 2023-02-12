@@ -400,6 +400,109 @@
       .footer-col .social-links a:hover{
         color:  rgb(214, 131, 75);
     }
+    @media only screen and (max-width: 767px) {
+        nav{
+            padding-top: 1px;
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-bottom: 1px;
+        }
+        .logo{
+            font-size: 15px;
+        }
+        nav ul li{
+            padding:4px 10px;
+        }
+        nav ul li a{
+            font-size: 9px;
+        }
+        nav button{
+            padding: 3px 8px;
+            font-size: 6px;
+        }
 
+        /*fotoja1*/
+    .forest {
+        width: 100%;
+        height: 700px;
+        background-color: rgb(255, 255, 255);
+    }
+    .forest img{
+        width: 120%;
+        height: 200px;
+    
+    }
+    
+    /*teksti*/
+  .tekst h1 {
+        position:absolute;
+        top: 40%;
+        right: 200px;
+        font-size: 30px;
+        font-weight: lighter;
+        color: rgb(0, 0, 0);
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 70px;
+       
+    }
+    .tekst p{
+        position: absolute;
+        top: 70%;
+        right: 70px;
+        font-size: 13px;
+        font-weight: lighter;
+        color: rgb(101, 101, 101);
+        margin-left: 50px;
+        
+        
+    }
+    /*mesi*/
+    .figurat{
+        width: 100%;
+        height: 280%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        background-color:   rgb(242, 242, 242);
+        margin-top: 350px;
+       
+    }
+    .figurat img{
+        width:50px;
+        height: 50px;
+    }
+    .figurat p{
+        padding-top: 60px;
+        font-size: 13px;
+        font-weight: 100;
+        text-decoration: none;
+        color: #414141;
+    }
+    
+        /*contact*/
+        .contact {
+            width: 100%;
+            height: 120px;
+            text-align: left;
+        }
+        .contact1 h1{
+            font-size: 22px;
+        }
+        .hotline h1{
+            font-size: 22px;
+        }
+        .nr1{
+            font-size: 15px;
+        }
+        .nr2{
+            font-size: 15px;
+        }
+    
+        /* Footer*/
+        .row{
+            padding-left: 25px;
+        }
+      
 
-
+    }
