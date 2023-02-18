@@ -133,6 +133,38 @@ input[type="submit"]{
   margin-top: 5px;
   color:rgb(65, 65, 65);
 }
+/*contact*/
+
+.contact {
+  display: flex;
+  width: 100%;
+  height: 160px;
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+.contact1 h1{
+  font-size: 28px;
+  font-family:'Times New Roman', Times, serif;
+  
+}
+.hotline h1{
+  font-size: 28px;
+  font-family:'Times New Roman', Times, serif;
+
+}
+.nr1{
+
+  font-family:'Times New Roman', Times, serif;
+  font-weight: lighter;
+}
+.nr2{
+
+  font-family:'Times New Roman', Times, serif;
+  font-weight: lighter;
+}
 /* Footer*/
 .container{
   width: 100%;

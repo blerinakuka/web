@@ -9,22 +9,12 @@
   <link rel="stylesheet" type="text/css"  href="css/faqs.css">
   <script src="javascript/script.js"></script>
 </head>
-<body>
-  <header>
-    <nav>
-      <h2 class="logo">CLEAR<span>+</span></h2>
-      <ul>
-          <li><a href ="index.html">Home</a></li>
-          <li><a href ="about.html">About us</a></li>
-          <li><a href ="shop.html">Products</a></li>
-          <li><a href ="contact.html">Contact us</a></li>
-          
-          <button type="button"><a href=login.html>Login</a></button>
+<?php
+ include 'subComponents/header.php';
 
-      </ul>
-    
-  </nav> 
-</header>
+?>
+<body>
+
 <div class="tekst">
   <h1>FAQs<br><br></h1><h2>Hours of Operation</h2><br>
     Our Clear+ Beauty support team is available:  

@@ -8,21 +8,12 @@
     <link rel="stylesheet" type="text/css"  href="css/style.css">
     <script src="javascript/script.js"></script>
 </head>
+<?php
+ include 'subComponents/header.php';
+
+?>
 <body>
-  <header>
-      <nav>
-        <h2 class="logo">CLEAR<span>+</span></h2>
-        <ul>
-            <li><a href ="index.html">Home</a></li>
-            <li><a href ="about.html">About us</a></li>
-            <li><a href ="shop.html">Products</a></li>
-           
 
-            <button type="button"><a href=login.html>Login</a></button>
-
-        </ul>
-    </nav> 
-  </header>
   <div class="foto1"> 
     <img src="images/black.jpg">
     <div class="top-right">

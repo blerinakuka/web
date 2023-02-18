@@ -8,23 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css"  href="css/shop.css">
     <script src="javascript/shop.js"></script>
-</head>
+    </head>
+<?php
+ include 'subComponents/header.php';
+
+?>
 <body>
-  <header>
-      <nav>
-        <h2 class="logo">CLEAR<span>+</span></h2>
-        <ul>
-          <li><a href ="index.html">Home</a></li>
-          <li><a href ="about.html">About us</a></li>
-          <li><a href ="shop.html">Products</a></li>
-          
-       
-            <button type="button"><a href=login.html>Login</a></button>
-
-        </ul>
-    </nav> 
-  </header>
-
   <section class="thenjaa">
     <div class="thenja"> 
         <h1>Proven Results. Clean Ingredients.<br></h1>
@@ -35,8 +24,80 @@
     </div>
    
 
-  </section>
-  <?php
+    </section>
+<div class="shopi">
+    <div class="produktet">
+        <div class="product ">
+          <img src="images/seti1.webp">
+          <p><a href ="#">5-Step Routine <br> $180</a></p><br>
+          <button type="button">SHOP NOW</button>
+        </div>
+       <div class="product ">
+           <img src="images/seti2.webp">
+           <p><a href ="#">3-Step Routine <br>$120</a></p><br>
+           <button type="button">SHOP NOW</button>
+       </div>
+       <div class="product ">
+         <img src="images/seti3.webp">
+         <p><a href ="#">Serum + moisturizer <br> $80</a></p><br>
+         <button type="button">SHOP NOW</button>
+         </div>
+         <div class="product ">
+            <img src="images/item1.webp">
+            <p><a href ="#">Facial Cleanser <br> $20</a></p><br>
+            <button type="button">SHOP NOW</button>
+          </div>
+       </div>
+  <div class="produktet">
+
+   <div class="product ">
+       <img src="images/item2.webp">
+       <p><a href ="#">Rose Water Toner <br>$17</a></p><br>
+       <button type="button">SHOP NOW</button>
+   </div>
+<div class="product ">
+     <img src="images/item3.webp">
+     <p><a href ="#">Vitamin C Serum<br> $90</a></p><br>
+     <button type="button">SHOP NOW</button>
+   </div>
+   <div class="product ">
+    <img src="images/item4.webp">
+    <p><a href ="#">Retinol Serum <br> $130</a></p><br>
+    <button type="button">SHOP NOW</button>
+  </div>
+ <div class="product ">
+     <img src="images/item5.webp">
+     <p><a href ="#">Anti-Aging Eye Cream <br>$112</a></p><br>
+     <button type="button">SHOP NOW</button>
+ </div>
+</div>
+<div class="produktet">
+
+   <div class="product ">
+     <img src="images/item6.webp">
+     <p><a href ="#">Hydrating Moisturizer <br> $53</a></p><br>
+     <button type="button">SHOP NOW</button>
+   </div>
+   <div class="product ">
+    <img src="images/item7.webp">
+    <p><a href ="#">Brightening Moisturizer <br> $46</a></p><br>
+    <button type="button">SHOP NOW</button>
+  </div>
+ <div class="product ">
+     <img src="images/item8.webp">
+     <p><a href ="#">Retinol Moisturizer <br>$130</a></p><br>
+     <button type="button">SHOP NOW</button>
+ </div>
+ <div class="product ">
+   <img src="images/item9.webp">
+   <p><a href ="#">Detox  Mask <br> $30</a></p><br>
+   <button type="button">SHOP NOW</button>
+   </div>
+   </div>
+
+</div>
+
+<?php
  include 'subComponents/footer.php';
 ?>
 </body>

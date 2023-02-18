@@ -8,22 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css"  href="css/contact.css">
   </head>
+  <?php
+ include 'subComponents/header.php';
+
+?>
+
   <body>
-    <header>
-      <nav>
-        <h2 class="logo">CLEAR<span>+</span></h2>
-        <ul>
-            <li><a href ="index.html">Home</a></li>
-            <li><a href ="about.html">About us</a></li>
-            <li><a href ="shop.html">Products</a></li>
-            
 
-            <button type="button"><a href=login.html>Login</a></button>
-
-        </ul>
-      
-    </nav> 
-  </header>
 <div id="overlay">
 <form onsubmit="event.preventDefault(); validateForm()">
   <h1>Contact Us</h1>
@@ -46,8 +37,10 @@
 </form>
 </div>
 <script src="javascript/contact.js"></script>
+
 <?php
  include 'subComponents/footer.php';
 ?>
+
 </body>
 </html>
