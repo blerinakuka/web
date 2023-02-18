@@ -46,36 +46,8 @@
 </form>
 </div>
 <script src="javascript/contact.js"></script>
-
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="shop.html">Products</a></li>
-          <li><a href ="contact.html">Contact us</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Highlights</h4>
-        <ul>
-          <li><a href="shop.html">Cleanser</a></li>
-          <li><a href="shop.html">Rose Water  <br>Toner</a></li>
-          <li><a href="shop.html">Brightening <br> Moisturizer</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>follow us</h4>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>               
-  </div>
-</footer>
+<?php
+ include 'subComponents/footer.php';
+?>
 </body>
 </html>
