@@ -38,5 +38,5 @@
               <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
         </div>               
-    </div>
+    </div> 
   </footer>

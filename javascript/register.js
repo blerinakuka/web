@@ -1,35 +1,48 @@
-let name1 = document.forms['form']['username'];
-let password = document.forms['form']['password'];
-
-let name1_error = document.getElementById('name1_error');
-let password_error = document.getElementById('password_error');
-
-name1.addEventListener('textInput', name1_Verify);
-password.addEventListener('textInput', password_Verify);
-
 function validated(){
-    if(name1.value.length < 6){
-        name1_error.style.display = "block"
-        name1.focus();
-        return false 
+    var name1 = document.forms["form"]["username"].value;
+    var password = document.forms["form"]["password"].value;
+    var repeat_password = document.forms["form"]["repeat_password"].value;
+    var email = document.forms["form"]["email"].value;
+  
+    var name1_error = document.getElementById("name1_error");
+    var password_error = document.getElementById("password_error");
+    var repeat_password_error = document.getElementById("repeat_password_error");
+    var email_error = document.getElementById("email_error");
+  
+    var valid = true;
+    var username_regex = /^[a-zA-Z0-9_]{3,20}$/;
+    var email_regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var password_regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+  
+    if (username == "" || !username_regex.test(name1)) {
+      name1_error.style.display = "block";
+      valid = false;
+    } else {
+      name1_error.style.display = "none";
     }
-    if(password.value.length < 6){
-        password_error.style.display = "block"
-        password.focus();
-        return false 
+  
+    if (email == "" || !email_regex.test(email)) {
+      email_error.style.display = "block";
+      valid = false;
+    } else {
+      email_error.style.display = "none";
     }
-
-}
-function name1_Verify(){
-
-    if(name1.value.length >= 6){
-        name1_error.style.display = "none"
-        return true ;
+  
+    if (password == "" || !password_regex.test(password)) {
+      password_error.style.display = "block";
+      valid = false;
+    } else {
+      password_error.style.display = "none";
     }
-}
-function password_Verify(){
-    if(password.value.length >= 6){
-        password_error.style.display = "none"
-        return true ;
+  
+    if (repeat_password == "" || password != repeat_password) {
+      repeat_password_error.innerHTML = "Passwords do not match";
+      repeat_password_error.style.display = "block";
+      valid = false;
+    } else {
+      repeat_password_error.style.display = "none";
     }
-}
+  
+    return valid;
+  } 
+  
