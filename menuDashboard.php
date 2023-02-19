@@ -18,7 +18,7 @@ require_once './controllers/MenuController.php';
 }
 
 .content-table thead tr {
-  background-color: #009879;
+  background-color: rgb(205, 172, 150);
   color: #ffffff;
   text-align: left;
   font-weight: bold;
@@ -53,6 +53,34 @@ require_once './controllers/MenuController.php';
     padding: 30px;
     text-decoration: none;
 }
+.button {
+        border: none;
+        padding: 6px 20px;
+        border-radius: 0;
+        color: #ffffff;
+        background: black;
+        font-weight: bold;
+        font-size: 15px;
+}
+
+.edit-button {
+  color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+}
+
+.delete-button {
+  color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+}
+
+    .button:hover{
+        cursor: pointer;
+        border: 1px solid rgb(189, 189, 189);
+        color: rgb(189, 189, 189);
+    }
+
 
 </style>
 <header>
@@ -92,8 +120,8 @@ require_once './controllers/MenuController.php';
             <td><?php echo $menu['menu_image']?></td>
             <td><?php echo $menu['menu_title']?></td>
             <td><?php echo $menu['menu_body']?></td>
-            <td><a class="a" href="edit-menu.php?id=<?php echo $menu['Id'];?>">Edit</a></td>
-            <td><a class="a" href="delete-menu.php?id=<?php echo $menu['Id'];?>">Delete</a></td>
+            <td><a class="button edit-button" href="edit-menu.php?id=<?php echo $menu['Id'];?>">Edit</a></td>
+            <td><a class="button delete-button" href="delete-menu.php?id=<?php echo $menu['Id'];?>">Delete</a></td>
           </tr>
           <?php endforeach; ?>
         </tbody>
