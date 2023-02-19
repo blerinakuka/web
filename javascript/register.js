@@ -10,11 +10,11 @@ function validated(){
     var email_error = document.getElementById("email_error");
   
     var valid = true;
-    var username_regex = /^[a-zA-Z0-9_]{3,20}$/;
+    var name_regex = /^[a-zA-Z0-9_]{3,20}$/;
     var email_regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     var password_regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
   
-    if (username == "" || !username_regex.test(name1)) {
+    if (name1 == "" || !name_regex.test(name1)) {
       name1_error.style.display = "block";
       valid = false;
     } else {
