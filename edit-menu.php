@@ -1,5 +1,5 @@
 <?php
-require_once '../controllers/MenuController.php';
+require_once './controllers/MenuController.php';
 if(isset($_GET['id'])){
     $menuId = $_GET['id'];
 }
@@ -21,7 +21,7 @@ if(isset($_POST['submit'])) {
     <input type="text" class="inputT" name="title" maxlength="50" value="<?php echo $currenMenu['menu_title'];?>">
     <br>
     Body:
-    <input type="text" class="inputta" name="body" cols="30" rows="10" maxlength="100" value="<?php echo $currenMenu['menu_body'];?>">
+    <input type="text" class="inputta" name="body" cols="30" rows="10" maxlength="200" value="<?php echo $currenMenu['menu_body'];?>">
     <br>
     <input type="submit" class="but" name="submit" value="Update">
 </form>

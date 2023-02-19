@@ -1,5 +1,5 @@
 <?php
-require_once '../controllers/MenuController.php';
+require_once './controllers/MenuController.php';
 
 $menu = new MenuController;
 if(isset($_POST['submit'])){
@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
         <input type="text" name="title" class="inputT" maxlength="50">
         <br>
         Content:
-        <textarea name="body" cols="30" rows="10" class="inputta" maxlength="100"></textarea>
+        <textarea name="body" cols="30" rows="10" class="inputta" maxlength="200"></textarea>
         <br>
         <input type="submit" name="submit" value="Save" class="but">
     </form>
