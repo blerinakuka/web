@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +18,7 @@
       <div class="inner-box" id="card">
         <div class="card-font">
           <h2>LOGIN</h2>
-          <form class="login_form" action="./login.php" method="post" name="form" onsubmit="return validated()">
+          <form class="login_form" action="./login_handler.php" method="post" name="form" onsubmit="return validated()">
             <input type="text" class="input-box" name="username" placeholder="Username" required>
             <div id="name1_error">Fill out your username correctly</div>
             <input type="password" class="input-box" name="password" placeholder="Password" required>

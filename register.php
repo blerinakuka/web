@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +21,7 @@
       <div class="inner-box" id="card">
       <div class="card-font">
     <h2>REGISTER</h2>
-    <form class="login_form" action="./register.php" method="post" name="form" onsubmit="return validated()">
+    <form class="login_form" action="./register_handler.php" method="post" name="form" onsubmit="return validated()">
         <input type="email" class="input-box" name="email" placeholder="Email" required>
         <div id="email_error">Fill out your email correctly</div>
   <input type="text" class="input-box" name="username" placeholder="Username" required>
