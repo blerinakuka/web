@@ -13,6 +13,12 @@
  include 'subComponents/header.php';
 
 ?>
+<?php
+include 'Model.php';
+$model = new Model();
+$rows = $model->shopfetch();
+?>
+
 <body>
   <section class="thenjaa">
     <div class="thenja"> 
@@ -28,13 +34,13 @@
 <div class="shopi">
     <div class="produktet">
         <div class="product ">
-          <img src="images/seti1.webp">
-          <p><a href ="#">5-Step Routine <br> $180</a></p><br>
+          <img src="<?php echo $rows[0]['image'];?>">
+          <p><a href ="#"><?php echo $rows[0]['name'];?> <br> <?php echo $rows[0]['price'];?></a></p><br>
           <button type="button">SHOP NOW</button>
         </div>
        <div class="product ">
-           <img src="images/seti2.webp">
-           <p><a href ="#">3-Step Routine <br>$120</a></p><br>
+           <img src="<?php echo $rows[1]['image'];?>">
+           <p><a href ="#"><?php echo $rows[1]['name'];?> <br> <?php echo $rows[1]['price'];?></a></p><br>
            <button type="button">SHOP NOW</button>
        </div>
        <div class="product ">
