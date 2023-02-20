@@ -13,6 +13,13 @@
  include 'subComponents/header.php';
 
 ?>
+  <?php
+            include 'Model.php';
+            $model = new Model();
+            $insert = $model->insert();
+            ?>
+
+
 <body>
   
   <div class="container">
@@ -20,14 +27,14 @@
       <div class="inner-box" id="card">
       <div class="card-font">
     <h2>REGISTER</h2>
-    <form class="login_form" action="./register.html" method="post" name="form" onsubmit="return validated()">
+    <form class="login_form" action="" method="post" name="form" onsubmit="return validated()">
         <input type="email" class="input-box" name="email" placeholder="Email" required>
         <div id="email_error">Fill out your email correctly</div>
-  <input type="text" class="input-box" name="username" placeholder="Username" required>
+  <input type="text" class="input-box" name="name" placeholder="Username" required>
   <div id="name1_error">Fill out your username correctly</div>
   <input type="password" class="input-box" name="password" placeholder="Password" required>
   <div id="password_error">Fill out your password correctly</div>
-   <button type="submit" class="submit-btn" >Submit</button>   
+   <input  name="submit" type="submit" class="submit-btn" value="signup"/>
   </form>
   <div class="acc">
   <a href="login.php" class="acc">Already have an account?</a></div>
@@ -38,7 +45,7 @@
       </div>
     </div>
   </div>
-  
+
 
  <section>
   <section>
