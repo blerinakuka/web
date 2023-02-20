@@ -67,7 +67,9 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+  .shkrimi hr {
+    border-bottom: 1px solid black;
+  }
   .produktet {
     display: flex;
     flex-direction: column;
@@ -76,10 +78,10 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     margin: 20px;
     width: 300px;
-    height: 400px;
+    height: 420px;
     overflow: hidden;
   }
-  
+
   .foto {
     width: 100%;
     height: 200px;
@@ -89,15 +91,15 @@
     align-items: center;
     padding-top: 10px;
   }
-  
+
   .foto img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
     border-radius: 50%;
   }
-  
-  
+
+
   .shkrimi {
     width: 100%;
     height: 200px; /* adjust the height as needed */
@@ -106,43 +108,29 @@
     justify-content: center;
     padding: 10px;
     text-align: justify;
-    overflow: auto; /* add vertical scrollbar if needed */
     word-wrap: break-word; /* force text to wrap */
   }
-  .shkrimi::-webkit-scrollbar {
-    width: 8px; /* set the width of the scrollbar */
-  }
-  
-  .shkrimi::-webkit-scrollbar-thumb {
-    background-color: #e4e4e4; /* set the color of the scrollbar thumb */
-    border-radius: 10px; /* round the corners of the thumb */
-  }
-  
-  .shkrimi::-webkit-scrollbar-track {
-    background-color: #000000; /* set the color of the scrollbar track */
-  }
-  
+ 
   .shkrimi p {
     margin: 0;
     font-size:13px!important;
     font-weight: lighter;
-    color: rgb(45, 45, 45);
   }
-  
+
   .shkrimi h5 {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
   }
 
-  
+
   @media screen and (max-width: 768px) {
     .produktet {
       width: 90%;
       height: auto;
     }
   }
-  
+
 
 
 
@@ -162,24 +150,24 @@
      .contact1 h1{
         font-size: 28px;
         font-family:'Times New Roman', Times, serif;
-        
+
        }
      .hotline h1{
         font-size: 28px;
         font-family:'Times New Roman', Times, serif;
-       
+
      }
      .nr1{
-      
+
          font-family:'Times New Roman', Times, serif;
          font-weight: lighter;
      }
      .nr2{
-      
+
          font-family:'Times New Roman', Times, serif;
          font-weight: lighter;
      }
- 
+
      /* Footer*/
      .container{
          width: 100%;

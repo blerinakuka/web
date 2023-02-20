@@ -26,7 +26,7 @@ require_once './controllers/MenuController.php';
             <img src="' .$all[$i]['menu_image'] .'">
         </div>
         <div class="shkrimi">
-            <h5>' .$all[$i]['menu_title'] .'<h5>
+            <h5>' .$all[$i]['menu_title'] .'<h5><hr><br>
             <p>' .$all[$i]['menu_body'] .'</p>
         </div>
         </div>';
