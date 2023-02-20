@@ -81,24 +81,28 @@ require_once './controllers/MenuController.php';
         color: rgb(189, 189, 189);
     }
 
+    .create {
+    font-size: 20px;
+    width:200px;
+    height:70px;
+    padding-left:20px;
+    padding-top:40px;
+    }
+
+    .create a{
+      text-decoration: none;
+      color:black;
+    }
+
 
 </style>
-<header>
-      <nav>
-        <h2 class="logo">CLEAR<span>+</span></h2>
-        <ul>
-            <li><a href ="index.php">Home</a></li>
-            <li><a href ="create-menu.php">Create</a></li>
-            <li><a href ="news.php">News</a></li>
-            
+<?php
+  include 'subComponents/header.php';
+?>
+<div class="create">
+<td><a href="create-menu.php">Create news</a></td>
 
-           
-
-            <button type="button"><a href=login.php>Login</a></button>
-
-        </ul>
-    </nav> 
-  </header>
+  </div>
 <div>
     <table class="content-table">
         <thead>
@@ -191,3 +195,40 @@ require_once './controllers/MenuController.php';
 
     }
   </style>
+
+<?php
+require_once './controllers/MenuControllerr.php';
+?>
+<div class="create">
+<td><a href="create-menu1.php">Create products</a></td>
+
+  </div>
+
+<div>
+    <table class="content-table">
+        <thead>
+            <tr>
+              <th>Image</th>
+              <th>Title</th>
+              <th>Text</th>
+              <th></th>
+              <th></th>
+            </tr>
+        </thead>
+        <tbody>
+          <?php
+          $m1 = new MenuControllerr;
+          $allMenu1 = $m1->readData();
+          foreach($allMenu1 as $menu1):
+          ?>
+          <tr>
+            <td><?php echo $menu1['menu_image']?></td>
+            <td><?php echo $menu1['menu_title']?></td>
+            <td><?php echo $menu1['menu_body']?></td>
+            <td><a class="button edit-button" href="edit-menu1.php?id=<?php echo $menu1['Id'];?>">Edit</a></td>
+            <td><a class="button delete-button" href="delete-menu1.php?id=<?php echo $menu1['Id'];?>">Delete</a></td>
+          </tr>
+          <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>

@@ -4,7 +4,9 @@ class Database1{
 
     public function __construct(){
         try{
-            session_start();
+            if (session_status() == PHP_SESSION_NONE) {
+                session_start();
+            }
             $link = new PDO('mysql:host=localhost;dbname=shop', 'root','');
             $this->pdo = $link;
         }catch(PDOException $exception){
