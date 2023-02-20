@@ -13,6 +13,7 @@ require_once './controllers/MenuController.php';
   font-size: 0.9em;
   width: 100%;
   border-radius: 5px 5px 0 0;
+  background-color: rgb(247, 247, 247);;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
@@ -97,7 +98,7 @@ require_once './controllers/MenuController.php';
 
 </style>
 <?php
-  include 'subComponents/header.php';
+  include './subComponents/header.php';
 ?>
 <div class="create">
 <td><a href="create-menu.php">Create news</a></td>
