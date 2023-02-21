@@ -75,7 +75,7 @@
                 with our worldwide network of institutes in order to spread the approach of true<br>
                 beauty globally. In turn, we set out to pamper every skin need with the best <br>
                 individual treatments and targeted care. In the institute, in the store, at home.<br></p>
-                <button type="button2"><a href=shop.html>Discover Products</a></button>
+                <button type="button2"><a href=shop.php>Discover Products</a></button>
           </div>
      <div class="skincare">
             <img src="images/kto3-jat.webp">

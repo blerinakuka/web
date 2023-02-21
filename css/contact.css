@@ -123,11 +123,10 @@ input[type="submit"]{
 
 }
 .error{
-  color:rgb(255, 153, 0);
-
+    color: #c62828;
 }
 .error-border{
-  border-bottom:1px rgb(255, 153, 0);
+    color: #c62828;
 }
 #success{
   margin-top: 5px;

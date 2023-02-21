@@ -22,7 +22,7 @@
          without unnecessary additives. We demand transparency about ingridients with
         scientifically proven results. Learn more about our commitment to Clean Beauty.</p>
     </div>
-    <button type="button"><a href=about.html>Read More</a></button>
+    <button type="button"><a href=about.php>Read More</a></button>
   </div>
     <section>
       <div class="quote1">

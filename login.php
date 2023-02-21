@@ -1,74 +1,23 @@
-<?php
-
-$server = "localhost";
-$username = "root";
-$password = '';
-$database = "ProjektiWeb";
-
-$data=mysqli_connect($server,$username,$password,$database);
-
-if($data===false){
-  die("connection error");
-}
-
-if($_SERVER["REQUEST_METHOD"]=="POST"){
-  $username=$_POST["username"];
-  $password=$_POST["password"];
-
-  $sql="SELECT * FROM users WHERE username='".$username."' AND password='".$password."' ";
-
-  $result=mysqli_query($data,$sql);
-
-  $row = mysqli_fetch_array($result);
-
-
-  if($row["usertype"]=="user"){
-
-    $_SESSION["username"]=$username;
-    header("location:home.php");
-
-  }
-
-  elseif($row["usertype"]=="admin"){
-
-    $_SESSION["username"]=$username;
-    header("location:dashboard.php");
-    
-  }
-
-  // if(isset($_POST["submit"])){
-  //   $myInput=$_POST["username"];
-  //   if(preg_match("/^[A-Za-z][A-Za-z0-9_]{7,29}$/", $myInput)){
-  //     echo "Valid Name";
-  //   }else{
-  //     echo"Enter Valid Name";
-  //   }
-  // }
- 
-
-}
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  
- <title>Login And Registration Form</title>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
- <link rel="stylesheet" type="text/css" href="css/login.css">
- <script src="javascript/script.js"></script>
+  <meta charset="utf-8">
+  <title>Login And Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <script src="javascript/script.js"></script>
 </head>
 <?php
- include 'subComponents/header.php';
-
+  include 'subComponents/header.php';
 ?>
-<body>
-  
-  <div class="container">
+<body> 
+  <div class="loginbody">
     <div class="card">
       <div class="inner-box" id="card">
       <div class="card-font">
     <h2>LOGIN</h2>
-    <form class="login_form" action="" method="post" name="form" onsubmit="return validated()">
+    <form class="login_form" action="./login.html" method="post" name="form" onsubmit="return validated()">
   <input type="text" class="input-box" name="username" placeholder="Username" required>
   <div id="name1_error">Fill out your username correctly</div>
   <input type="password" class="input-box" name="password" placeholder="Password" required>
@@ -125,4 +74,4 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 <script src="javascript/validation.js"></script>
 <script src="javascript/validation - Copy.js"></script>
 </body>
-</html>
+</html> 

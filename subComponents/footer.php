@@ -16,18 +16,18 @@
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="shop.html">Products</a></li>
-            <li><a href ="contact.html">Contact us</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.php">About Us</a></li>
+            <li><a href="shop.php">Products</a></li>
+            <li><a href ="contact.php">Contact us</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Highlights</h4>
           <ul>
-            <li><a href="shop.html">Cleanser</a></li>
-            <li><a href="shop.html">Rose Water  <br>Toner</a></li>
-            <li><a href="shop.html">Brightening <br> Moisturizer</a></li>
+            <li><a href="shop.php">Cleanser</a></li>
+            <li><a href="shop.php">Rose Water  <br>Toner</a></li>
+            <li><a href="shop.php">Brightening <br> Moisturizer</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -38,5 +38,5 @@
               <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
         </div>               
-    </div>
+    </div> 
   </footer>
