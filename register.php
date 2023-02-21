@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,14 +27,24 @@
       <div class="inner-box" id="card">
       <div class="card-font">
     <h2>REGISTER</h2>
-    <form class="login_form" action="./register.html" method="post" name="form" onsubmit="return validated()">
+
+    <form class="login_form" action="" method="post" name="form" onsubmit="return validated()">
+
+    <form class="login_form" action="./register_handler.php" method="post" name="form" onsubmit="return validated()">
+
         <input type="email" class="input-box" name="email" placeholder="Email" required>
         <div id="email_error">Fill out your email correctly</div>
   <input type="text" class="input-box" name="name" placeholder="Username" required>
   <div id="name1_error">Fill out your username correctly</div>
   <input type="password" class="input-box" name="password" placeholder="Password" required>
   <div id="password_error">Fill out your password correctly</div>
+
+   <input  name="submit" type="submit" class="submit-btn" value="signup"/>
+
+  <input type="password" class="input-box" name="repeat_password" placeholder="Repeat Password" required>
+<div id="repeat_password_error">Fill out your repeat password correctly</div>
    <button type="submit" class="submit-btn" >Submit</button>   
+
   </form>
   <div class="acc">
   <a href="login.php" class="acc">Already have an account?</a></div>
@@ -46,7 +55,10 @@
       </div>
     </div>
   </div>
-  
+
+  <?php
+ include 'subComponents/footer.php';
+
 
 ?>
 <script src="javascript/register.js"></script>
