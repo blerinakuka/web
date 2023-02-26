@@ -1,46 +1,9 @@
 <?php
-
-$server = "localhost";
-$username = "root";
-$password = '';
-$database = "ProjektiWeb";
-
-$data=mysqli_connect($server,$username,$password,$database);
-
-if($data===false){
-  die("connection error");
+if(isset($_GET['error'])){
+  $error = $_GET['error'];
+  echo '<script>alert("'.$error.'")</script>';
 }
-
-if($_SERVER["REQUEST_METHOD"]=="POST"){
-  $username=$_POST["username"];
-  $password=$_POST["password"];
-
-  $sql="SELECT * FROM users WHERE username='".$username."' AND password='".$password."' ";
-
-  $result=mysqli_query($data,$sql);
-
-  $row = mysqli_fetch_array($result);
-
-
-  if($row["usertype"]=="user"){
-
-    $_SESSION["username"]=$username;
-    header("location:home.php");
-
-  }
-
-  elseif($row["usertype"]=="admin"){
-
-    $_SESSION["username"]=$username;
-    header("location:dashboard.php");
-    
-  }
-
- 
-
-}
-
-?><!DOCTYPE html>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -62,12 +25,13 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
       <div class="card-font">
     <h2>LOGIN</h2>
-    <form class="login_form" action="" method="post" name="form" onsubmit="return validated()">
-  <input type="text" class="input-box" name="username" placeholder="Username" required>
+    <form class="login_form" action="new/loginController.php" method="post" name="form" onsubmit="return validated()">
+    
+            <input type="text" class="input-box" name="username" placeholder="Username" required>
   <div id="name1_error">Fill out your username correctly</div>
-  <input type="password" class="input-box" name="password" placeholder="Password" required>
+            <input type="password" class="input-box" name="password" placeholder="Password" required>
   <div id="password_error">Fill out your password correctly</div>
-   <button type="submit" class="submit-btn" >Submit</button>   
+  <input type="submit" name="login-btn" value="SIGN IN" class="submit-btn">
   </form>
   <a href="register.php" class="acc">Don't have an account?</a>
       </div>
@@ -130,8 +94,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
   </div>
   <?php
     include 'subComponents/footer.php';
+    include "new/loginController.php"; 
   ?>
-  <script src="javascript/validation.js"></script>
+  <!-- <script src="javascript/validation.js"></script> -->
 </body>
 </html> 
 

@@ -1,5 +1,9 @@
 <?php
 require_once './controllers/MenuController.php';
+require_once './controllers/contactController.php';
+include_once 'new/userMapper.php';
+include_once 'new/adminClass.php';
+include_once 'new/simpleUserClass.php';
 ?>
 
 <style>
@@ -100,12 +104,103 @@ require_once './controllers/MenuController.php';
 <?php
   include './subComponents/header.php';
 ?>
+
+<div>
+<h1>Contact Dashboard</h1>
+    <table class="content-table">
+        <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Message</th>
+              <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+          <?php
+          $c = new contactController;
+          $allContacts = $c->getAllContacts();
+          foreach($allContacts as $contact):
+          ?>
+          <tr>
+          <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $contact['name']?></td>
+          <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $contact['email']?></td>
+          <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $contact['message']?></td>
+            <td><a class="a" href="delete-contact.php?id=<?php echo $contact['Id'];?>">Delete</a></td>
+          </tr>
+          <?php endforeach; ?>
+        </tbody> 
+    </table>
+    </div>
+    <h1>Admin Dashboard</h1>
+    <h2 class="b"><a class="a"href="create-admin.php">Create a admin</a></h1>
+    <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $mapper = new userMapper();
+                $adminList = $mapper->getAllAdmins();
+
+                foreach ($adminList as $mapper) {
+                ?>
+                    <tr>
+                        <td><?php echo $mapper['email']; ?></td>
+                        <td><?php echo $mapper['username']; ?></td>
+                        <td><?php echo $mapper['userpassword']; ?></td>
+                        <td><a class="a" href="set-user.php?id=<?php echo $mapper['userID'];?>">Set as User</td>
+                        <td><a class="a" href="delete-admin.php?id=<?php echo $mapper['userID'];?>">Delete</td>
+                        
+                    </tr>
+                <?php
+                }
+                ?>
+            </tbody>
+        </table>
+        <h1>User Dashboard</h1>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $mapper = new userMapper();
+                $simpleList = $mapper->getAllSimpleUsers();
+
+                foreach ($simpleList as $mapper) {
+                ?>
+                    <tr>
+                        <td><?php echo $mapper['email']; ?></td>
+                        <td><?php echo $mapper['username']; ?></td>
+                        <td><?php echo $mapper['userpassword']; ?></td>
+                        <td><a class="a" href="set-admin.php?id=<?php echo $mapper['userID'];?>">Set as Admin</td>
+                        <td><a class="a" href="delete-user.php?id=<?php echo $mapper['userID'];?>">Delete</td>
+                    </tr>
+                <?php
+                }
+                ?>
+            </tbody>
+        </table>
 <div class="create">
+  
 <td><a href="create-menu.php">Create news</a></td>
 
   </div>
 <div>
-    <table class="content-table">
+<table class="content-table">
         <thead>
             <tr>
               <th>Image</th>
@@ -131,7 +226,8 @@ require_once './controllers/MenuController.php';
           <?php endforeach; ?>
         </tbody>
     </table>
-</div>
+</div>  -->
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap%27');
 *{

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +13,7 @@
  include 'subComponents/header.php';
 
 ?>
-  <?php
-            include 'Model.php';
-            $model = new Model();
-            $insert = $model->insert();
-            ?>
+
 
 
 <body>
@@ -31,20 +26,16 @@
 
     <form class="login_form" action="" method="post" name="form" onsubmit="return validated()">
 
-    <form class="login_form" action="./register_handler.php" method="post" name="form" onsubmit="return validated()">
 
-        <input type="email" class="input-box" name="email" placeholder="Email" required>
+        <input type="email" class="input-box" name="register-emailaddress" placeholder="Email" required>
         <div id="email_error">Fill out your email correctly</div>
-  <input type="text" class="input-box" name="name" placeholder="Username" required>
+  <input type="text" class="input-box" name="register-username" placeholder="Username" required>
   <div id="name1_error">Fill out your username correctly</div>
-  <input type="password" class="input-box" name="password" placeholder="Password" required>
+  <input type="password" class="input-box" name="register-password" placeholder="Password" required>
   <div id="password_error">Fill out your password correctly</div>
 
-   <input  name="submit" type="submit" class="submit-btn" value="signup"/>
-
-  <input type="password" class="input-box" name="repeat_password" placeholder="Repeat Password" required>
-<div id="repeat_password_error">Fill out your repeat password correctly</div>
-   <button type="submit" class="submit-btn" >Submit</button>   
+   <input  name="register-btn" type="submit" class="submit-btn" value="signup"/>
+  
 
   </form>
   <div class="acc">
@@ -59,6 +50,7 @@
 
   <?php
  include 'subComponents/footer.php';
+ include_once 'new/registerController.php';
 
 
 ?>
