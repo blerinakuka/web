@@ -26,7 +26,7 @@ class MenuController{
         $query->bindParam(':menu_body', $request['body']);
         $query->execute();
 
-        return header('Location: menuDashboard.php');
+        return header('Location: ./menuDashboard.php');
     }
 
     public function edit($id){
@@ -47,7 +47,7 @@ class MenuController{
         $query->bindParam(':id', $id);
         $query->execute();
 
-        return header('Location: menuDashboard.php');
+        return header('Location: ./menuDashboard.php');
     }
 
     public function delete($id){
@@ -55,7 +55,7 @@ class MenuController{
         $query->bindParam(':id', $id);
         $query->execute();
 
-        return header("Location: menuDashboard.php");
+        return header("Location: ./menuDashboard.php");
     }
 }
 ?>

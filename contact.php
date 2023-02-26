@@ -10,31 +10,25 @@
   </head>
   <?php
  include 'subComponents/header.php';
-
-?>
+ include 'Contact2PHP.php'?>
 
   <body>
 
 <div id="overlay">
-<form onsubmit="event.preventDefault(); validateForm()">
-  <h1>Contact Us</h1>
-  <label for="name">Name:</label>
-  <input type="text" id="name" placeholder="Your Name">
-  <small class="error"></small>
-
-  <label for="email">Email:</label>
-  <input type="text" id="email" placeholder="Your Email">
-  <small class="error"></small>
-
-  <label for="message">Message:</label>
-  <textarea id="message" placeholder="Your message" rows="6"></textarea>
-  <small class="error"></small>
-
-  <div class="center">
-    <input type="submit" value="Send Message">
-    <p id="success"></p>
-  </div>
+<form class="contact-form" action="Contact2PHP.php" method="post" name="form" onsubmit="return validated()">
+              <div class="txt_field">
+                <input autocomplete="off" type="text" name="name" placeholder="Name: " id="name" required>
+                <span></span>
+              </div>
+              <div class="txt_field">
+                <input autocomplete="off" type="email" name="email" placeholder="Email: " id="email" required>
+                <span></span>
+              </div>
+              <textarea id="subject" name="message" placeholder="Type your message here:" id="message" rows="10" cols="70"></textarea>
+              <input type="submit" name="submit-btn" value="SEND">
+</div>
 </form>
+
 </div>
 <script src="javascript/contact.js"></script>
 

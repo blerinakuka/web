@@ -1,5 +1,10 @@
 <?php
 require_once './controllers/MenuController.php';
+require_once './controllers/contactController.php';
+require_once './controllers/storeController.php';
+include_once 'new/userMapper.php';
+include_once 'new/adminClass.php';
+include_once 'new/simpleUserClass.php';
 ?>
 
 <style>
@@ -100,12 +105,103 @@ require_once './controllers/MenuController.php';
 <?php
   include './subComponents/header.php';
 ?>
+
+<div>
+<h1>Contact Dashboard</h1>
+    <table class="content-table">
+        <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Message</th>
+              <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+          <?php
+          $c = new contactController;
+          $allContacts = $c->getAllContacts();
+          foreach($allContacts as $contact):
+          ?>
+          <tr>
+          <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $contact['name']?></td>
+          <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $contact['email']?></td>
+          <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $contact['message']?></td>
+            <td><a class="a" href="delete-contact.php?id=<?php echo $contact['Id'];?>">Delete</a></td>
+          </tr>
+          <?php endforeach; ?>
+        </tbody> 
+    </table>
+    </div>
+    <h1>Admin Dashboard</h1>
+    <h2 class="b"><a class="a"href="create-admin.php">Create a admin</a></h1>
+    <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $mapper = new userMapper();
+                $adminList = $mapper->getAllAdmins();
+
+                foreach ($adminList as $mapper) {
+                ?>
+                    <tr>
+                        <td><?php echo $mapper['email']; ?></td>
+                        <td><?php echo $mapper['username']; ?></td>
+                        <td><?php echo $mapper['userpassword']; ?></td>
+                        <td><a class="a" href="set-user.php?id=<?php echo $mapper['userID'];?>">Set as User</td>
+                        <td><a class="a" href="delete-admin.php?id=<?php echo $mapper['userID'];?>">Delete</td>
+                        
+                    </tr>
+                <?php
+                }
+                ?>
+            </tbody>
+        </table>
+        <h1>User Dashboard</h1>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $mapper = new userMapper();
+                $simpleList = $mapper->getAllSimpleUsers();
+
+                foreach ($simpleList as $mapper) {
+                ?>
+                    <tr>
+                        <td><?php echo $mapper['email']; ?></td>
+                        <td><?php echo $mapper['username']; ?></td>
+                        <td><?php echo $mapper['userpassword']; ?></td>
+                        <td><a class="a" href="set-admin.php?id=<?php echo $mapper['userID'];?>">Set as Admin</td>
+                        <td><a class="a" href="delete-user.php?id=<?php echo $mapper['userID'];?>">Delete</td>
+                    </tr>
+                <?php
+                }
+                ?>
+            </tbody>
+        </table>
 <div class="create">
+  
 <td><a href="create-menu.php">Create news</a></td>
 
   </div>
 <div>
-    <table class="content-table">
+<table class="content-table">
         <thead>
             <tr>
               <th>Image</th>
@@ -131,7 +227,8 @@ require_once './controllers/MenuController.php';
           <?php endforeach; ?>
         </tbody>
     </table>
-</div>
+</div>  -->
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap%27');
 *{
@@ -201,35 +298,35 @@ require_once './controllers/MenuController.php';
 require_once './controllers/MenuControllerr.php';
 ?>
 <div class="create">
-<td><a href="create-menu1.php">Create products</a></td>
+<td><a href="create-store.php">Create products</a></td>
 
   </div>
 
 <div>
-    <table class="content-table">
+<table class="content-table">
         <thead>
             <tr>
+              <th>Name</th>
+              <th>Price</th>
               <th>Image</th>
-              <th>Title</th>
-              <th>Text</th>
-              <th></th>
-              <th></th>
+              <th>Edit</th>
+              <th>Delete</th>
             </tr>
         </thead>
         <tbody>
           <?php
-          $m1 = new MenuControllerr;
-          $allMenu1 = $m1->readData();
-          foreach($allMenu1 as $menu1):
+          $s = new StoreController;
+          $allStore = $s->readData();
+          foreach($allStore as $store):
           ?>
           <tr>
-            <td><?php echo $menu1['menu_image']?></td>
-            <td><?php echo $menu1['menu_title']?></td>
-            <td><?php echo $menu1['menu_body']?></td>
-            <td><a class="button edit-button" href="edit-menu1.php?id=<?php echo $menu1['Id'];?>">Edit</a></td>
-            <td><a class="button delete-button" href="delete-menu1.php?id=<?php echo $menu1['Id'];?>">Delete</a></td>
+          <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $store['i_title']?></td>
+          <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $store['i_body']?></td>
+          <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $store['i_image']?></td>
+            <td><a class="a" href="edit-store.php?id=<?php echo $store['Id'];?>">Edit</a></td>
+            <td><a class="a" href="delete-store.php?id=<?php echo $store['Id'];?>">Delete</a></td>
           </tr>
           <?php endforeach; ?>
-        </tbody>
+        </tbody> 
     </table>
 </div>

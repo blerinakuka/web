@@ -124,17 +124,6 @@
   }
 
 
-  @media screen and (max-width: 768px) {
-    .produktet {
-      width: 90%;
-      height: auto;
-    }
-  }
-
-
-
-
-
     /*contact*/
 
     .contact {
@@ -242,3 +231,26 @@
        .footer-col .social-links a:hover{
          color:  rgb(214, 131, 75);
      }
+
+
+     @media screen and (max-width: 768px) {
+        nav{
+            padding-top: 1px;
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-bottom: 1px;
+        }
+        .logo{
+            font-size: 15px;
+        }
+        nav ul li{
+            padding:4px 10px;
+        }
+        nav ul li a{
+            font-size: 9px;
+        }
+        nav button{
+            padding: 3px 8px;
+            font-size: 6px;
+        }
+      }
