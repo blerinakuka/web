@@ -105,6 +105,7 @@ include_once 'new/simpleUserClass.php';
 <?php
   include './subComponents/header.php';
 ?>
+ <link rel="stylesheet" type="text/css" href="css/login.css">
 
 <div>
 <h1>Contact Dashboard</h1>
