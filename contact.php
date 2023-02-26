@@ -10,7 +10,8 @@
   </head>
   <?php
  include 'subComponents/header.php';
- include 'Contact2PHP.php'?>
+
+?>
 
   <body>
 

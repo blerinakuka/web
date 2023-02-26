@@ -96,7 +96,7 @@ if(isset($_GET['error'])){
     include 'subComponents/footer.php';
     include "new/loginController.php"; 
   ?>
- <script src="javascript/validation.js"></script> 
+  <script src="javascript/validation.js"></script>
 </body>
 </html> 
 

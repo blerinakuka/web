@@ -1,10 +1,5 @@
 <?php
 require_once './controllers/MenuController.php';
-require_once './controllers/contactController.php';
-require_once './controllers/storeController.php';
-include_once 'new/userMapper.php';
-include_once 'new/adminClass.php';
-include_once 'new/simpleUserClass.php';
 ?>
 
 <style>
