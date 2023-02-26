@@ -1,5 +1,10 @@
 <?php
 require_once './controllers/MenuController.php';
+require_once './controllers/contactController.php';
+require_once './controllers/storeController.php';
+include_once 'new/userMapper.php';
+include_once 'new/adminClass.php';
+include_once 'new/simpleUserClass.php';
 ?>
 
 <style>
@@ -122,14 +127,14 @@ require_once './controllers/MenuController.php';
           <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $contact['name']?></td>
           <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $contact['email']?></td>
           <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $contact['message']?></td>
-            <td><a class="a" href="delete-contact.php?id=<?php echo $contact['Id'];?>">Delete</a></td>
+            <td><a class="button delete-button" href="delete-contact.php?id=<?php echo $contact['Id'];?>">Delete</a></td>
           </tr>
           <?php endforeach; ?>
         </tbody> 
     </table>
     </div>
     <h1>Admin Dashboard</h1>
-    <h2 class="b"><a class="a"href="create-admin.php">Create a admin</a></h1>
+    <h2 class="b"><a class="a"href="create-admin.php">Create an admin</a></h2>
     <table class="content-table">
             <thead>
                 <tr>
@@ -151,8 +156,8 @@ require_once './controllers/MenuController.php';
                         <td><?php echo $mapper['email']; ?></td>
                         <td><?php echo $mapper['username']; ?></td>
                         <td><?php echo $mapper['userpassword']; ?></td>
-                        <td><a class="a" href="set-user.php?id=<?php echo $mapper['userID'];?>">Set as User</td>
-                        <td><a class="a" href="delete-admin.php?id=<?php echo $mapper['userID'];?>">Delete</td>
+                        <td><a class="button edit-button" href="set-user.php?id=<?php echo $mapper['userID'];?>">Set as User</td>
+                        <td><a class="button delete-button" href="delete-admin.php?id=<?php echo $mapper['userID'];?>">Delete</td>
                         
                     </tr>
                 <?php
@@ -182,8 +187,8 @@ require_once './controllers/MenuController.php';
                         <td><?php echo $mapper['email']; ?></td>
                         <td><?php echo $mapper['username']; ?></td>
                         <td><?php echo $mapper['userpassword']; ?></td>
-                        <td><a class="a" href="set-admin.php?id=<?php echo $mapper['userID'];?>">Set as Admin</td>
-                        <td><a class="a" href="delete-user.php?id=<?php echo $mapper['userID'];?>">Delete</td>
+                        <td><a class="button edit-button" href="set-admin.php?id=<?php echo $mapper['userID'];?>">Set as Admin</td>
+                        <td><a class="button delete-button" href="delete-user.php?id=<?php echo $mapper['userID'];?>">Delete</td>
                     </tr>
                 <?php
                 }
@@ -222,7 +227,7 @@ require_once './controllers/MenuController.php';
           <?php endforeach; ?>
         </tbody>
     </table>
-</div>  -->
+</div> 
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap%27');
@@ -287,11 +292,50 @@ require_once './controllers/MenuController.php';
         font-weight: bold;
 
     }
+    @media screen and (max-width: 768px) {
+        nav{
+            padding-top: 1px;
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-bottom: 1px;
+        }
+        .logo{
+            font-size: 15px;
+        }
+        nav ul li{
+            padding:4px 10px;
+        }
+        nav ul li a{
+            font-size: 9px;
+        }
+        nav button{
+            padding: 3px 8px;
+            font-size: 6px;
+        }
+
+
+         /*contact*/
+         .contact {
+            width: 100%;
+            height: 120px;
+            text-align: left;
+        }
+        .contact1 h1{
+            font-size: 22px;
+        }
+        .hotline h1{
+            font-size: 22px;
+        }
+        .nr1{
+            font-size: 15px;
+        }
+        .nr2{
+            font-size: 15px;
+        }
+      }
   </style>
 
-<?php
-require_once './controllers/MenuControllerr.php';
-?>
+
 <div class="create">
 <td><a href="create-store.php">Create products</a></td>
 
@@ -318,8 +362,8 @@ require_once './controllers/MenuControllerr.php';
           <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $store['i_title']?></td>
           <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $store['i_body']?></td>
           <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $store['i_image']?></td>
-            <td><a class="a" href="edit-store.php?id=<?php echo $store['Id'];?>">Edit</a></td>
-            <td><a class="a" href="delete-store.php?id=<?php echo $store['Id'];?>">Delete</a></td>
+            <td><a class="button edit-button" href="edit-store.php?id=<?php echo $store['Id'];?>">Edit</a></td>
+            <td><a class="button delete-button" href="delete-store.php?id=<?php echo $store['Id'];?>">Delete</a></td>
           </tr>
           <?php endforeach; ?>
         </tbody> 

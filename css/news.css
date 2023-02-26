@@ -253,4 +253,23 @@
             padding: 3px 8px;
             font-size: 6px;
         }
+         /*contact*/
+         .contact {
+            width: 100%;
+            height: 120px;
+            text-align: left;
+        }
+        .contact1 h1{
+            font-size: 22px;
+        }
+        .hotline h1{
+            font-size: 22px;
+        }
+        .nr1{
+            font-size: 15px;
+        }
+        .nr2{
+            font-size: 15px;
+        }
       }
+      

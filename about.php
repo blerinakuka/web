@@ -113,7 +113,6 @@
             Professional support, performance treatments <br>
             and power INCIs – at CLEAR+kin is in good hands. Bye-bye <br>
             problem skin, hello natural beauty.</p><br>
-        <button type="button">More information</button>
       </div>
       </div>
   </section>

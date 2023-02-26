@@ -49,17 +49,14 @@
         <div class="product1">
           <img src="images/vegan.webp">
           <p><a href ="#">FACIAL <br> CLEANSER</a></p><br>
-          <button type="button">SHOP</button>
         </div>
        <div class="product2">
            <img src="images/moisturizer.webp">
            <p><a href ="#">ROSE WATER<br>TONER</a></p><br>
-           <button type="button">SHOP</button>
        </div>
        <div class="product3">
          <img src="images/shine.webp">
          <p><a href ="#">BRIGHTENING <br>MOISTURIZER</a></p><br>
-         <button type="button">SHOP</button>
        </div>
     </div>
   </section>
